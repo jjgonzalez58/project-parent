@@ -1,0 +1,27 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: supply-service
+  boot:
+    admin:
+      client:
+        url: [ http://localhost:8081/admin-service ]
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    com:
+      bytesw: INFO
+    springFramework:
+      web:
+        client:
+          RestTemplate: INFO

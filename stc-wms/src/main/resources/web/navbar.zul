@@ -1,0 +1,11 @@
+<zk>
+    <div style="background: #38AFDF; display: inline-flex; width:100%; height: 43px;">
+        <div style="background: #38AFDF; display: inline-flex; width:100%; margin-left: -12px; height: 43px;">
+            <toolbarbutton target="_zkdemo" style="color: white; margin-left: 4px;"
+                           iconSclass="z-icon-align-justify	"/>
+            <label value="STC-WMS" style="margin-top: 10px; margin-left: 7px; color: white; font-weight: bold;"/>
+        </div>
+            <toolbarbutton target="_zkdemo" style="color: #696569;"
+                           iconSclass="z-icon-power-off" label="Logout"/>
+    </div>
+</zk>

@@ -1,0 +1,23 @@
+<?page title="STC JALAPA" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" href="resources/static/css/stc-tpv.css" ?>
+<zk xmlns:h="native">
+    <h:link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet"/>
+    <h:link href="css/stc-tpv.css"/>
+    <div id="dvnavbar" style="whidth: 100%; background-color: #21618C; height:4%">
+
+    </div>
+    <div id = "dvLogin" style="padding-top: 5%; padding-left: 35%; " viewModel="@id('vm') @init('com.stc.wms.loginuser.bean.SecurityNavigationBean')">
+        <vbox>
+            <image src="img/logoStc.png" style="width: 230px; height: 200px;"/>
+            <div style="border: 2px solid; border-color: #21618C;; border-radius: 8px;">
+                <button iconSclass="z-icon-user" disabled="true" style="width: 41px; height: 32px; padding: inherit; border-radius: revert; background-color: #2980B9; "/>
+                <textbox id = "txtUser" style="margin-left: -3px; border: none;" value="@bind(vm.loginRequest.loginUser)"/>
+            </div>
+            <div style="border: 2px solid; border-color: #21618C;; border-radius: 8px;">
+                <button iconSclass="z-icon-key" disabled="true" style="width: 41px; height: 32px; padding: inherit; border-radius: revert; background-color: #2980B9;"/>
+                <textbox id = "txtPass" type="password" style="margin-left: -3px; border: none;" value="@bind(vm.loginRequest.loginPass)"/>
+            </div>
+            <button id = "btnLogin" label="Ingresar"  style="width: 100%; background-color: #21618C;" onClick="@command('login')"/>
+        </vbox>
+    </div>
+</zk>

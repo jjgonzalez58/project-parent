@@ -1,0 +1,35 @@
+<zk xmlns:h="native">
+    <window style="width: 100%; margin-top: 5px;" border="none" apply="org.zkoss.bind.BindComposer"
+            viewModel="@id('vm') @init('com.stc.wms.usermanager.bean.CreateUserBean')">
+    <grid>
+        <rows>
+        <row>
+            <label value="Nombre:"/>
+            <textbox id="txtUserName" value="@bind(vm.user.name)" focus="true"/>
+        </row>
+        <row>
+            <label value="Apellido:"/>
+            <textbox id="txtlastname" value="@bind(vm.user.lastname)"/>
+        </row>
+        <row>
+            <label value="Alias:"/>
+            <textbox id="txtAlias" value="@bind(vm.user.alias)"/>
+        </row>
+        <row>
+            <label value="Passwor:"/>
+            <textbox id="txtPassword" type="password" value="@bind(vm.user.password)"/>
+        </row>
+            <row>
+                <label value="Rol:"/>
+                <textbox id="txtRol"  value="@bind(vm.user.rolid)"/>
+            </row>
+            <row>
+                <label value="@bind(vm.errorMessage)" style="color: red;"/>
+            </row>
+            <row>
+                <button label="Guardar" onClick="@command('saved')"/>
+            </row>
+        </rows>
+    </grid>
+    </window>
+</zk>

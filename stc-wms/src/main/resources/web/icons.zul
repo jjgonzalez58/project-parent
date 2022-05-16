@@ -1,0 +1,820 @@
+<zk>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-glass " label="z-icon-glass"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-music"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-search"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-envelope-o"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-heart"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-star"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-star-o"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-user"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-film"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-th-large"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-th"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-th-list"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-check"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-times"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-search-plus"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-search-minus"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-power-off"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-signal"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-gear"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-cog"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-trash-o"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-home"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-file-o"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-clock-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-road	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-download"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-circle-o-down"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-circle-o-up"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-inbox	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-play-circle-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rotate-right"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-repeat"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-refresh	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-list-alt"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-lock	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-flag	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-headphones"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-volume-off"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-volume-down"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-volume-up"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-qrcode	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-barcode	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-tag	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-tags	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-book	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bookmark"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-print	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-camera	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-font	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bold	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-italic	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-text-height"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-text-width	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-align-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-align-center"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-align-right"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-align-justify	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-list		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-dedent	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-outdent	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-indent	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-video-camera	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-picture-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-pencil		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-map-marker	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-adjust		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-tint		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-edit	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-pencil-square-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-share-square-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-check-square-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-move		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-step-backward	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-fast-backward	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-backward	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-play		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-pause		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-stop		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-forward		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-fast-forward	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-step-forward	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-eject		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chevron-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chevron-right	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-plus-circle	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-minus-circle	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-times-circle	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-check-circle	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-question-circle	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-info-circle	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-crosshairs	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-times-circle-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-check-circle-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-ban		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-right	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-mail-forward	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-share		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-resize-full	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-resize-small	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-plus		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-minus		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-asterisk	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-exclamation-circle	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-gift		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-leaf		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-fire		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-eye		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-eye-slash	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-warning		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-exclamation-triangle"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-plane		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-calendar	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-random		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-comment		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-magnet		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chevron-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chevron-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-retweet		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-shopping-cart	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-folder		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-folder-open	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-resize-vertical	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-resize-horizontal	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bar-chart-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-twitter-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-facebook-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-camera-retro	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-key		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-gears		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-cogs		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-comments	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-thumbs-o-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-thumbs-o-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-star-half	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-heart-o		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sign-out	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-linkedin-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-thumb-tack	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-external-link	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sign-in		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-trophy		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-github-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-upload		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-lemon-o		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-phone		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-square-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bookmark-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-phone-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-twitter		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-facebook	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-github	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-unlock	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-credit-card"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rss	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-hdd-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bullhorn	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bell	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-certificate"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-hand-o-right"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-hand-o-left"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-hand-o-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-hand-o-down"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-circle-left"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-circle-right"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-circle-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-circle-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-globe		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-wrench		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-tasks		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-filter		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-briefcase	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-fullscreen	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-group		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chain	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-link	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-cloud	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-flask	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-cut	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-scissors	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-copy		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-files-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-paperclip	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-save	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-floppy-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-square		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-reorder		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-list-ul		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-list-ol		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-strikethrough	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-underline	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-table	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-magic	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-truck	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-pinterest"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-pinterest-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-google-plus-square"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-google-plus	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-money		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-caret-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-caret-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-caret-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-caret-right	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-columns	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-unsorted"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-down"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-asc"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-desc"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-envelope	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-linkedin"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rotate-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-undo		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-legal		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-gavel	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-dashboard"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-tachometer	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-comment-o"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-comments-o"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-flash	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bolt	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sitemap	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-umbrella"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-paste	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-clipboard"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-lightbulb-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-exchange"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-cloud-download	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-cloud-upload	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-user-md		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-stethoscope	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-suitcase	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bell-o		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-coffee	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-cutlery	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-file-text-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-building"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-hospital	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-ambulance	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-medkit		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-fighter-jet	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-beer		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-h-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-plus-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-angle-double-left"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-angle-double-right"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-angle-double-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-angle-double-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-angle-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-angle-right	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-angle-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-angle-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-desktop		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-laptop		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-tablet		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-mobile-phone	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-mobile		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-circle-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-quote-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-quote-right	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-spinner	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-circle		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-mail-reply	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-reply		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-github-alt	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-folder-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-folder-open-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-expand-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-collapse-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-smile-o		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-frown-o		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-meh-o		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-gamepad		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-keyboard-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-flag-o		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-flag-checkered	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-terminal	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-code		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-reply-all	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-mail-reply-all	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-star-half-empty	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-star-half-full	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-star-half-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-location-arrow	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-crop		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-code-fork	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-unlink	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chain-broken	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-question	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-info		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-exclamation	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-superscript	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-subscript	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-eraser		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-puzzle-piece	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-microphone	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-microphone-slash"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-shield		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-calendar-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-fire-extinguisher"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rocket		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-maxcdn		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chevron-circle-left"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chevron-circle-right"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chevron-circle-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-chevron-circle-down"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-html5		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-css3		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-anchor		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-unlock-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bullseye	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-ellipsis-horizontal"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-ellipsis-vertical	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rss-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-play-circle	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-ticket		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-minus-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-minus-square-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-level-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-level-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-check-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-pencil-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-external-link-square"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-share-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-compass		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-toggle-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-caret-square-o-down"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-toggle-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-caret-square-o-up"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-toggle-right	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-caret-square-o-right"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-euro	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-eur	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-gbp	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-dollar	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-usd	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rupee	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-inr	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-cny	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rmb	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-yen	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-jpy	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-ruble	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rouble	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-rub	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-won	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-krw	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bitcoin	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-btc	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-file	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-file-text	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-alpha-asc	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-alpha-desc"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-amount-asc	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-amount-desc"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-numeric-asc"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sort-numeric-desc"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-thumbs-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-thumbs-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-youtube-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-youtube	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-xing	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-xing-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-youtube-play	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-dropbox		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-stack-overflow	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-instagram	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-flickr		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-adn		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bitbucket	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bitbucket-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-tumblr		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-tumblr-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-long-arrow-down	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-long-arrow-up	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-long-arrow-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-long-arrow-right	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-apple		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-windows		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-android		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-linux		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-dribbble	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-skype		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-foursquare	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-trello		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-female		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-male		"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-gittip	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-sun-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-moon-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-archive	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-bug	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-vk	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-weibo	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-renren	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-pagelines	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-stack-exchange	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-circle-o-right"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-arrow-circle-o-left"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-toggle-left	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-caret-square-o-left"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-dot-circle-o	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-wheelchair	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-vimeo-square	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-turkish-lira	"/>
+    <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                   iconSclass="z-icon-try	"/>
+</zk>

@@ -1,0 +1,69 @@
+<zk>
+    <tabbox width="100%" sclass="nav_tabs" viewModel="@id('vm') @init('com.stc.wms.navigation.bean.NavbarBean')">
+        <tabs id="tabs" style="background: #38AFDF;">
+            <tab label="Home" onClick="@command('chanceInternalPage', service='home')" onSelect="" style="background: #38AFDF;"/>
+            <tab label="${labels.mn.admin}" onSelect="updatePanelAdmin()" onClick="@command('selectedPanel', panel='admin-user')" style="background: #38AFDF;"/>
+            <tab label="Compras" onSelect="updateCategory(self.label)" style="background: #38AFDF;"/>
+            <tab label="Ventas" onSelect="updateCategory(self.label)" style="background: #38AFDF;"/>
+            <tab label="Caja" onSelect="updateCategory(self.label)" style="background: #38AFDF;"/>
+        </tabs>
+        <toolbar sclass="nav_toolbar" style="background: #38AFDF;">
+            <toolbarbutton target="_zkdemo" style="color: #3a92c8;"
+                           iconSclass="z-icon-twitter-square" href="http://twitter.com/zkoss" />
+            <toolbarbutton target="_zkdemo" style="color: #3b5998;"
+                           iconSclass="z-icon-facebook-square" href="http://www.facebook.com/zk.framework" />
+            <toolbarbutton target="_zkdemo" style="color: #696569;"
+                           iconSclass="z-icon-gear" href="https://github.com/zkoss/" />
+        </toolbar>
+<!--        <tabpanels>-->
+<!--            <tabpanel visible="false"/>-->
+<!--            <tabpanel id = "tp_admin"  visible="@load(vm.currentPage.enable)" >-->
+<!--                <toolbar hflex="true" >-->
+<!--                    <toolbarbutton label="${labels.admin.user}"   onClick="@command('chanceInternalPage', service='admin-user')" />-->
+<!--                    <toolbarbutton label="${labels.change.pwd}" onClick="@command('chanceInternalPage', service='change-pwd')" />-->
+<!--                    <toolbarbutton label="${labels.data.business}" onClick="@command('chanceInternalPage', service='data-bsn')" />-->
+<!--                </toolbar>-->
+<!--            </tabpanel>-->
+<!--            <tabpanel>-->
+<!--                <toolbar hflex="true">-->
+<!--                    <toolbarbutton label="Proveedores" onClick="updateSubPage(self.label)" />-->
+<!--                    <toolbarbutton label="Orden de compra" onClick="updateSubPage(self.label)" />-->
+<!--                    <toolbarbutton label="Recpción de Productos" onClick="updateSubPage(self.label)" />-->
+<!--                </toolbar>-->
+<!--            </tabpanel>-->
+<!--            <tabpanel>-->
+<!--                <toolbar hflex="true">-->
+<!--                    <toolbarbutton label="Documentation 1" onClick="updateSubPage(self.label)" />-->
+<!--                    <toolbarbutton label="Documentation 2" onClick="updateSubPage(self.label)" />-->
+<!--                    <toolbarbutton label="Documentation 3" onClick="updateSubPage(self.label)" />-->
+<!--                    <toolbarbutton label="Documentation 4" onClick="updateSubPage(self.label)" />-->
+<!--                    <toolbarbutton label="Documentation 5" onClick="updateSubPage(self.label)" />-->
+<!--                </toolbar>-->
+<!--            </tabpanel>-->
+<!--            <tabpanel>-->
+<!--                <toolbar hflex="true">-->
+<!--                    <toolbarbutton label="Caja" onClick="updateSubPage(self.label)"/>-->
+<!--                </toolbar>-->
+<!--            </tabpanel>-->
+<!--        </tabpanels>-->
+    </tabbox>
+<!--    <separator height="30px"></separator>-->
+    <zscript><![CDATA[
+        void updateCategory(String category) {
+            current_category.setValue(category);
+            current_subpage.setValue("Index");
+        }
+        void updateSubPage(String sub) {
+            current_subpage.setValue(sub);
+        }
+        void updatePanelAdmin() {
+            tp_admin.setVisible(true);
+        }
+    ]]></zscript>
+<!--    <hlayout>-->
+<!--        <label id="current_category" sclass="nav_text nav_category" onClick='updateSubPage("Index")'>Our Product</label>-->
+<!--        <label sclass="nav_text">-</label>-->
+<!--        <label id="current_subpage" sclass="nav_text">Index</label>-->
+<!--    </hlayout>-->
+
+</zk>

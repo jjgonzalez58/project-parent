@@ -1,0 +1,9 @@
+.z-tab-text{
+ font-style: normal;
+ color: #f8f9fa !important;
+ display: block;
+ line-height: 24px;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}

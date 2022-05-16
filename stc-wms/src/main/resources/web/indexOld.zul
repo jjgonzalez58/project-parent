@@ -1,0 +1,18 @@
+<?page title="STC-POS" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="native" style="background-color: blue;">
+    <h:link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet"/>
+    <div id = "dvLogin" style="padding-top: 5%; padding-left: 35%">
+        <vbox>
+            <image src="img/logoStc.png" style="width: 215px; height: 250px;"/>
+            <div style="border: 2px solid; border-color: lightgrey; border-radius: 8px;">
+                <button iconSclass="z-icon-user" disabled="true" style="width: 41px; height: 32px; padding: inherit; border-radius: revert;"/>
+                <textbox id = "txtUser" style="margin-left: -3px; border: none;"/>
+            </div>
+            <div style="border: 2px solid; border-color: lightgrey; border-radius: 8px;">
+                <button iconSclass="z-icon-key" disabled="true" style="width: 41px; height: 32px; padding: inherit; border-radius: revert;"/>
+                <textbox id = "txtPass" type="password" style="margin-left: -3px; border: none;"/>
+            </div>
+            <button id = "btnLogin" label="Ingresar"  style="width: 100%"/>
+        </vbox>
+    </div>
+</zk>

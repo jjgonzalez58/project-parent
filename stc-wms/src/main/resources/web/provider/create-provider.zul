@@ -1,0 +1,43 @@
+<zk xmlns:h="native">
+    <window style="width: 100%; margin-top: 5px;" border="none" apply="org.zkoss.bind.BindComposer"
+            viewModel="@id('vm') @init('com.stc.wms.managerprovider.bean.CreateProviderBean')">
+        <grid>
+            <rows>
+                <row>
+                    <label value="Nombre:"/>
+                    <textbox id="txtProviderName" value="@bind(vm.providerDTO.nombre)" focus="true"/>
+                </row>
+                <row>
+                    <label value="Nit:"/>
+                    <textbox id="txtNit" value="@bind(vm.providerDTO.nit)"/>
+                </row>
+                <row>
+                    <label value="Direccion:"/>
+                    <textbox id="txtDireccion" value="@bind(vm.providerDTO.direccion)"/>
+                </row>
+                <row>
+                    <label value="Telefono:"/>
+                    <textbox id="txtTelefono" value="@bind(vm.providerDTO.telefono)"/>
+                </row>
+                <row>
+                    <label value="Contacto:"/>
+                    <textbox id="txtContacto"  value="@bind(vm.providerDTO.contacto)"/>
+                </row>
+                <row>
+                    <label value="Email:"/>
+                    <textbox id="txtEmail"  value="@bind(vm.providerDTO.email)"/>
+                </row>
+                <row>
+                    <label value="Status:"/>
+                    <textbox id="txtStatus"  value="@bind(vm.providerDTO.status)"/>
+                </row>
+                <row>
+                    <label value="@bind(vm.errorMessage)" style="color: red;"/>
+                </row>
+                <row>
+                    <button label="Guardar" onClick="@command('savedProvider')"/>
+                </row>
+            </rows>
+        </grid>
+    </window>
+</zk>

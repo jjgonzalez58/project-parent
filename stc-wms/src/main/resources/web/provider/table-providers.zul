@@ -1,0 +1,18 @@
+<zk xmlns:h="native">
+    <window style="width: 100%; margin-top: 5px;" border="none" apply="org.zkoss.bind.BindComposer"
+            viewModel="@id('vm') @init('com.stc.wms.managerprovider.bean.CreateProviderBean')">
+        <grid>
+
+            <listbox id="table-providers">
+                <listheader name = "Id Provedor"/>
+                <listheader name = "Nombre"/>
+                <listheader name = "Nit"/>
+                <listheader name = "Direccion"/>
+                <listheader name = "Telefono"/>
+                <listheader name = "Contacto"/>
+                <listheader name = "Email"/>
+                <listheader name = "status"/>
+            </listbox>
+        </grid>
+    </window>
+</zk>

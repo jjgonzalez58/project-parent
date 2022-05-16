@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <config-name>stc-wms</config-name>
+    <session-config>
+        <device-type>ajax</device-type>
+        <session-timeout>86400</session-timeout>
+    </session-config>
+    <log>
+        <log-base>org.zkoss</log-base>
+    </log>
+</zk>

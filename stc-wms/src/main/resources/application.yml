@@ -1,0 +1,32 @@
+server:
+  port: 8082
+zk.homepage: index
+spring:
+  application:
+    name: stc-wms
+  boot:
+    admin:
+      client:
+        url: [ http://localhost:8081/admin-service ]
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    com:
+      bytesw: INFO
+    springFramework:
+      web:
+        client:
+          RestTemplate: INFO
+security:
+  service:
+    name: stc-security
+    url: http://localhost:8080
