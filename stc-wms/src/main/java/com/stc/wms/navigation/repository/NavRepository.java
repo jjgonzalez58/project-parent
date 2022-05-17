@@ -25,7 +25,7 @@ public class NavRepository {
         panelList.add(menuT);
         PanelService menuHome = new PanelService("home", "~./home.zul");
         panelList.add(menuHome);
-        PanelService menuTable = new PanelService("Tables", "z-icon-flag-o");
+        PanelService menuTable = new PanelService("adm-material", "~./warehouse/material-manager.zul");
         panelList.add(menuTable);
         // kevin borge
         PanelService menuP = new PanelService("create-provider", "~./provider/create-provider.zul");
