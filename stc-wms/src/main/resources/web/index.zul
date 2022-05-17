@@ -1,6 +1,6 @@
 <?link rel="stylesheet" href="webjars/bootstrap/4.6.0/css/bootstrap.min.css"?>
 <zk>
-    <div viewModel="@id('vm')@init('com.stc.wms.navigation.bean.MainBean')" width="100%" height="100%"
+    <div viewModel="@id('vm')@init('com.stc.wms.navigation.bean.MainBean')" width="100%" height="94%"
              style="margin-top: 0px; width: 100%; height:100%;">
         <include src="~./navbar.zul" style="width: 100%;  border:1px; margin-top: -2px"/>
         <div style="width: 100%; height:100%; border:1px; display: inline-flex; margin-top: 0px">

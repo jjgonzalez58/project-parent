@@ -1,6 +1,6 @@
 <zk xmlns:n="native">
     <vbox style="width: 100%; align-content: center;">
-        <label value="Sistema de Gestión de almacenes y Ventas" style="
+        <label value="Sistema de Gestión de Productos y Facturación" style="
     font-size: 25px;
     font-weight: bold;
     color: #38AFDF;

@@ -1,0 +1,88 @@
+<zk>
+    <div>
+        <separator height="6px"/>
+        <label value="Gestión de materiales" style="
+    font-size: 20px;
+    font-weight: bold;
+    color: #38AFDF;
+    margin-top: 2px;"/>
+        <tabbox>
+            <tabs>
+                <tab label="Datos Generales" closable="false"/>
+                <tab label="Categoria" closable="false"/>
+                <tab label="Unidad de Medida" closable="false"/>
+            </tabs>
+            <tabpanels>
+                <tabpanel>
+                    <div>
+                        <grid>
+                            <rows>
+                                <row>
+                                    <label value="Nombre de Material:"/>
+                                    <textbox id="txtNombreMaterial"  focus="true"/>
+                                </row>
+                                <row>
+                                    <label value="Descripción breve:"/>
+                                    <textbox id="descrip" />
+                                </row>
+                                <row>
+                                    <label value="Marca comercial:"/>
+                                    <textbox id="marca" />
+                                </row>
+                                <row>
+                                    <label value="Estado:"/>
+                                    <combobox id="estado" />
+                                </row>
+                            </rows>
+                        </grid>
+                    </div>
+                </tabpanel>
+                <tabpanel>
+                    <div>
+                        <grid>
+                            <rows>
+                                <row>
+                                    <label value="Categoria:"/>
+                                    <combobox id="idCat"  focus="true"/>
+                                </row>
+                                <row>
+                                    <label value="Nombre Categoria:"/>
+                                    <textbox id="nomcat" />
+                                </row>
+                            </rows>
+                        </grid>
+                    </div>
+                </tabpanel>
+                <tabpanel>
+                    <div>
+                        <grid>
+                            <rows>
+                                <row>
+                                    <label value="Medida:"/>
+                                    <combobox id="idmed"  focus="true"/>
+                                </row>
+                                <row>
+                                    <label value="Nombre medida:"/>
+                                    <textbox id="nomMed" />
+                                </row>
+                                <row>
+                                    <label value="Sistema:"/>
+                                    <textbox id="sistema" />
+                                </row>
+                                <row>
+                                    <label value="Abreviatura:"/>
+                                    <textbox id="abreviatura" />
+                                </row>
+                            </rows>
+                        </grid>
+                    </div>
+                </tabpanel>
+            </tabpanels>
+        </tabbox>
+        <div style="display: inline-flex;">
+            <button label="Crear nuevo" style="background: green; margin: 3px"/>
+            <button label="Guardar Cambios" style="margin: 3px"/>
+            <button label="Editar Información"  style="background: coral; margin: 3px"/>
+        </div>
+    </div>
+</zk>
