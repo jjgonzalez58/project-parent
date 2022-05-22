@@ -1,11 +1,7 @@
 <zk>
     <div>
         <separator height="6px"/>
-        <label value="Gestión de materiales" style="
-    font-size: 20px;
-    font-weight: bold;
-    color: #38AFDF;
-    margin-top: 2px;"/>
+        <label value="Gestión de materiales" zclass="stc-title-one"/>
         <tabbox>
             <tabs>
                 <tab label="Datos Generales" closable="false"/>
