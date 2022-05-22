@@ -25,3 +25,12 @@ logging:
       web:
         client:
           RestTemplate: INFO
+datasource:
+  mysql:
+    url: jdbc:mysql://192.168.2.116:3306/security?autoReconect=true
+    username: jjgonzalez
+    password: Desarrollo.2022
+    driverClassName: com.mysql.cj.jdbc.Driver
+    jpa:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      showSql: true
