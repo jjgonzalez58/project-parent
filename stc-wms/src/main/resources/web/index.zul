@@ -1,14 +1,15 @@
 <?link rel="stylesheet" href="webjars/bootstrap/4.6.0/css/bootstrap.min.css"?>
 <zk>
+    <style src="css/styles.css"/>
     <div viewModel="@id('vm')@init('com.stc.wms.navigation.bean.MainBean')" width="100%" height="94%"
              style="margin-top: 0px; width: 100%; height:100%;">
         <include src="~./navbar.zul" style="width: 100%;  border:1px; margin-top: -2px"/>
         <div style="width: 100%; height:100%; border:1px; display: inline-flex; margin-top: 0px">
-            <div style="max-width: 250px; min-width: 250px; background: #515151; margin-left: -7px; padding-left: 20px;">
+            <div zclass="stc-sidebar-include">
                 <include src="~./sidebar.zul" style="height:50%;"/>
             </div>
-            <div id="dvContent" sclass="container-fluid" hflex="1" style="width: 100%; align-content: center;">
-                <include src="@load(vm.navigationModel.contentUrl)"/>
+            <div id="dvContent" sclass="container-fluid" hflex="1" style="width: 100%; text-align: center; align-content: center;">
+                <include src="@load(vm.navigationModel.contentUrl)" style="width: 100%; text-align: center; align-content: center;"/>
             </div>
         </div>
     </div>

@@ -1,0 +1,53 @@
+<zk>
+    <div width="100%" style="">
+    <label value="Administración de servicios de autorización" zclass="stc-title-one"/>
+    <div viewModel="@id('vm') @init('com.stc.wms.security.bean.ManagerServiceBean')" apply="org.zkoss.bind.BindComposer" >
+        <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;">
+            <caption label="Datos Genarales creación de un Servicio"/>
+       <grid style="border: none;">
+           <rows>
+           <row>
+               <label value="Codigo de servicio:"/>
+               <textbox value="@bind(vm.createService.code)"  id="txtCodsvr" focus="true" />
+           </row>
+           <row>
+               <label value="Descripcion:"/>
+               <textbox value="@bind(vm.createService.description)" id="txtDescrip" />
+           </row>
+           </rows>
+       </grid>
+        <div style="align-content: center; padding-button: 10px;">
+            <button id="btnGuardar" label="Guardar" onClick="@command('saved')" visible="@load(!vm.editMode)" style="width: 180px;"/>
+            <button id="btnEditar" label="Guardar cambios" onClick="@command('saved')" visible="@load(vm.editMode)" style="width: 180px;"/>
+            <button id="btnCancelar" label="Cancelar" onClick="@command('newService')" visible="@load(vm.editMode)" style="width: 180px;"/>
+        </div>
+        </groupbox>
+        <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;">
+            <caption label="Servicio en sistema"/>
+        <listbox mold="paging" autopaging="false" model="@load(vm.listService)"
+                 selectedItem="@bind(vm.currentService)" emptyMessage="0 Coincicencias">
+            <listhead>
+                <listheader label="Identificador" width="150px"/>
+                <listheader label="Codigo"/>
+                <listheader label="Descripcion"/>
+                <listheader label="CtrlEdit" width="100px"/>
+                <listheader label="CtrlDelete" width="100px"/>
+            </listhead>
+            <template name="model" var="svr">
+                <listitem>
+                    <listcell label="@load(svr.id)"/>
+                    <listcell label="@load(svr.code)"/>
+                    <listcell label="@load(svr.description)"/>
+                    <listcell>
+                        <button  label="Editar" onClick="@command('editService',selected = svr)" />
+                    </listcell>
+                    <listcell>
+                        <button  label="Eliminar" onClick="@command('deleteService',selected = svr)" />
+                    </listcell>
+                </listitem>
+            </template>
+        </listbox>
+        </groupbox>
+    </div>
+    </div>
+</zk>

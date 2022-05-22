@@ -1,0 +1,82 @@
+<zk>
+    <div width="100%" style="">
+        <label value="Administración de Perfiles de usuario" zclass="stc-title-one"/>
+        <div viewModel="@id('vm') @init('com.stc.wms.security.bean.ManagerProfileBean)" apply="org.zkoss.bind.BindComposer" >
+            <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;">
+                <caption label="Datos Genarales del Perfil"/>
+                <tabbox>
+                    <tabs>
+                        <tab label="Datos Generales" closable="false"/>
+                        <tab label="Asignación de Servicios" closable="false"/>
+                    </tabs>
+                    <tabpanels>
+                        <tabpanel>
+                            <div>
+                                <grid style="border: none;">
+                                    <rows>
+                                        <row>
+                                            <label value="Nombre:"/>
+                                            <textbox id="txtNombreMaterial"  focus="true"/>
+                                        </row>
+                                        <row>
+                                            <label value="Descripción:"/>
+                                            <textbox id="descrip" />
+                                        </row>
+                                    </rows>
+                                </grid>
+                            </div>
+                        </tabpanel>
+                        <tabpanel>
+                            <div>
+                                <grid style="border: none;">
+                                    <rows>
+                                        <row>
+                                            <label value="Categoria:"/>
+                                            <combobox id="idCat"  focus="true"/>
+                                        </row>
+                                        <row>
+                                            <label value="Nombre Categoria:"/>
+                                            <textbox id="nomcat" />
+                                        </row>
+                                    </rows>
+                                </grid>
+                            </div>
+                        </tabpanel>
+                    </tabpanels>
+                </tabbox>
+
+                <div style="align-content: center; padding-button: 10px;">
+                    <button id="btnGuardar" label="Guardar" onClick="@command('saved')" visible="@load(!vm.editMode)" style="width: 180px;"/>
+                    <button id="btnEditar" label="Guardar cambios" onClick="@command('saved')" visible="@load(vm.editMode)" style="width: 180px;"/>
+                    <button id="btnCancelar" label="Cancelar" onClick="@command('newProfile')" visible="@load(vm.editMode)" style="width: 180px;"/>
+                </div>
+            </groupbox>
+            <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;">
+                <caption label="Servicio en sistema"/>
+                <listbox mold="paging" autopaging="false" model="@load(vm.listProfile)"
+                         selectedItem="@bind(vm.currentProfile)" emptyMessage="0 Coincicencias">
+                    <listhead>
+                        <listheader label="Identificador"/>
+                        <listheader label="Nombre"/>
+                        <listheader label="Descripcion"/>
+                        <listheader label=""/>
+                        <listheader label=""/>
+                    </listhead>
+                    <template name="model" var="prf">
+                        <listitem>
+                            <listcell label="@load(prf.id)"/>
+                            <listcell label="@load(prf.name)"/>
+                            <listcell label="@load(prf.description)"/>
+                            <listcell>
+                                <button  label="Editar" onClick="@command('editProfile',selected = prf)" />
+                            </listcell>
+                            <listcell>
+                                <button  label="Eliminar" onClick="@command('deleteProfile',selected = prf)" />
+                            </listcell>
+                        </listitem>
+                    </template>
+                </listbox>
+            </groupbox>
+        </div>
+    </div>
+</zk>
