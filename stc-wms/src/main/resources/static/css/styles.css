@@ -1,4 +1,4 @@
-.z-tab-text{
+.stc-z-tab-text{
  font-style: normal;
  color: #f8f9fa !important;
  display: block;
@@ -6,4 +6,117 @@
  overflow: hidden;
  text-overflow: ellipsis;
  white-space: nowrap;
+}
+.stc-z-tab-text-selected{
+ color: #f8f9fa !important;
+ font-weight: bold;
+}
+.stc-z-tab-text-content{
+ color: #f8f9fa !important;
+}
+.stc-z-tab-text-text{
+ color: #f8f9fa !important;
+}
+.stc-z-tabpanel{
+ border-top: 1px solid #D9D9D9;
+ padding: 16px;
+ zoom: 0;
+ color: rgba(0,0,0,0.9);
+}
+.stc-z-tabpanel-content{
+ background: #6c757d;
+ border: none;
+ width: 100%;
+ max-height: 170px;
+ display: block;
+ padding: 16px;
+ zoom: 1;
+ border-top: 1px solid #D9D9D9;
+ color: rgba(0,0,0,0.9);
+}
+.stc-z-tab-text-text:hover{
+ cursor: pointer;
+ background-color: cornflowerblue;
+}
+.stc-z-toolbarbutton{
+ display: inline-block;
+ position: relative;
+ cursor: pointer;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ overflow: hidden;
+ background: #6c757d;
+ width: 100%;
+}
+.stc-z-toolbarbutton:hover{
+ cursor: pointer;
+ background-color: cornflowerblue;
+}
+.stc-z-toolbarbutton-content{
+ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size: 18px;
+ font-weight: normal;
+ font-style: normal;
+ color: #e9ecef;
+ border: 2px solid transparent;
+ padding: 6px 12px;
+ line-height: 18px;
+ display: inline-block;
+ vertical-align: middle;
+ position: relative;
+ white-space: nowrap;
+ background: #6c757d;
+}
+.stc-z-toolbarbutton-content:hover{
+ cursor: pointer;
+ background-color: cornflowerblue;
+}
+.stc-sidebar-include{
+ max-width: 280px;
+ min-width: 260px;
+ background: #6c757d;
+ margin-left: -7px;
+ padding-left: 20px;
+
+}
+
+
+.stc-title-one{
+ font-size: 20px;
+ font-weight: bold;
+ color: #38AFDF;
+ margin-top: 2px;
+}
+
+.stc-title-two{
+ font-size: 15px;
+ font-weight: bold;
+ color: #38AFDF;
+ margin-top: 2px;
+}
+
+.stc-title-info{
+ color: #137197 !important;
+}
+.stc-text-content-success{
+ font-size: 15px;
+ color: darkgreen;
+ font-family: serif;
+}
+.stc-text-content-info{
+ font-size: 15px;
+ color: goldenrod;
+ font-family: serif;
+}
+.stc-text-content-warning{
+ font-size: 15px;
+ color: coral;
+ font-family: serif;
+}
+
+.stc-text-content-error{
+ font-size: 15px;
+ font-family: serif;
+ color: brown;
 }
