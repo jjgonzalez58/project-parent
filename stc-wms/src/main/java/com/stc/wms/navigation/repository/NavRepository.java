@@ -33,7 +33,7 @@ public class NavRepository {
         PanelService tableProviders = new PanelService("load-table", "~./provider/table-providers.zul" );
         panelList.add(tableProviders);
 
-        PanelService menuC = new PanelService("Contact", "z-icon-envelope-o");
+        PanelService menuC = new PanelService("adm-service", "~./profile/manager-service.zul");
 //        menuC.setCounter(Util.nextInt(1, 10));
         panelList.add(menuC);
         PanelService menuF = new PanelService("Freeze", "z-icon-snowflake-o");
