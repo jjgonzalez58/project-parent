@@ -1,5 +1,6 @@
 package com.stc.wms.security.controller;
 
+import com.stc.wms.security.dto.ProfileDTO;
 import com.stc.wms.security.dto.ServiceDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +17,7 @@ import java.util.List;
  *
  * @author job
  */
-@FeignClient(name = "security-prifile", url="localhost:8083")
+@FeignClient(name = "securityServices", url="localhost:8083")
 public interface AuthorizationController {
 
     @PostMapping("/security/authorization/save")
@@ -24,4 +25,5 @@ public interface AuthorizationController {
 
     @GetMapping("/security/authorization/all")
     ResponseEntity<List<ServiceDTO>> loadAll();
+
 }
