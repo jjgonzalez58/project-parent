@@ -1,43 +1,41 @@
-<div style="background: #6c757d; margin-left: -7px;" >
+<div style="background: #515151; margin-left: -7px;" >
     <div style="display: inline-flex; margin-top: 5px;">
-        <image src="img/avatarUser.jpg" style="width: 60px; height: 54px; border-radius: 50%;"/>
-        <label value="Administrador" style="margin-top: 19px; margin-left: 7px; color: white; font-weight: bold;"/>
+        <image src="img/user.png" style="width: 60px; height: 54px; border-radius: 50%;"/>
+        <label value="JJGonzalez" style="margin-top: 19px; margin-left: 7px; color: white; font-weight: bold;"/>
     </div>
-<tabbox id="tb" width="100%" height="100%" mold="accordion" style="background: #6c757d; margin-left: -7px; border: none;"
-        viewModel="@id('vm') @init('com.stc.wms.navigation.bean.NavbarBean')" >
+<tabbox id="tb" width="100%" height="100%" mold="accordion" style="background: #515151; margin-left: -7px; border: none;"
+        viewModel="@id('vm') @init('com.stc.wms.navigation.bean.NavbarBean')">
     <tabs>
-        <tab label="Ventas" style="background: #6c757d; border: none;" iconSclass="z-icon-truck" zclass="stc-z-tab-text" selected="false"/>
-        <tab label="Catálogos" style="background: #6c757d; border: none;" iconSclass="z-icon-list-alt" zclass="stc-z-tab-text" selected="false"/>
-        <tab label="Compras" style="background: #6c757d; border: none;" iconSclass="z-icon-shopping-cart" zclass="stc-z-tab-text" selected="false"/>
-        <tab label="Clientes" style="background: #6c757d; border: none;" iconSclass="z-icon-male" zclass="stc-z-tab-text" selected="false"/>
-        <tab label="Configuración" style="background: #6c757d; border: none;" iconSclass="z-icon-gear" zclass="stc-z-tab-text" selected="false" />
+        <tab label="Catálogos" style="background: #515151; border: none;" iconSclass="z-icon-list-alt"/>
+        <tab label="Ventas" style="background: #515151; border: none;" iconSclass="z-icon-truck"/>
+        <tab label="Compras" style="background: #515151; border: none;" iconSclass="z-icon-shopping-cart"/>
+        <tab label="Clientes" style="background: #515151; border: none;" iconSclass="z-icon-male"/>
+        <tab label="Configuración" style="background: #515151; border: none;" iconSclass="z-icon-gear"/>
     </tabs>
-    <tabpanels >
-        <tabpanel width="100%" zclass="stc-z-tabpanel">
-            <toolbarbutton iconSclass="z-icon-caret-right" label="Facturación"   width="100%" zclass="stc-z-toolbarbutton"/>
-            <toolbarbutton iconSclass="z-icon-caret-right" label="Caja"   width="100%" zclass="stc-z-toolbarbutton"/>
-        </tabpanel>
-        <tabpanel width="100%" zclass="stc-z-tabpanel" >
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Materiales" width="100%" zclass="stc-z-toolbarbutton"
-                               onClick="@command('chanceInternalPage', service='adm-material')" />
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Categorias" width="100%" zclass="stc-z-toolbarbutton"/>
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Proveedores" width="100%" zclass="stc-z-toolbarbutton"
+    <tabpanels>
+        <tabpanel width="100%" style="background: #515151; border: none; padding-top: 0px">
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Materiales" width="100%" style="background: #515151;"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Categorias" width="100%" style="background: #515151;"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Proveedores" width="100%" style="background: #515151;"
                                onClick="@command('chanceInternalPage', service='create-provider')"/>
         </tabpanel>
-        <tabpanel width="100%" zclass="stc-z-tabpanel">
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Orden Compra"  width="100%" zclass="stc-z-toolbarbutton"/>
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Recepción Matrial"  width="100%" zclass="stc-z-toolbarbutton"/>
+        <tabpanel width="100%" style="background: #515151; padding-top: 0px">
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Facturación"   width="100%" style="background: #515151;"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Caja"   width="100%" style="background: #515151;"/>
         </tabpanel>
-        <tabpanel width="100%" zclass="stc-z-tabpanel">
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Creación cliente"  width="100%" zclass="stc-z-toolbarbutton"/>
+        <tabpanel width="100%" style="background: #515151; padding-top: 0px">
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Orden Compra"  width="100%" style="background: #515151;"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Recepción Matrial"  width="100%" style="background: #515151;"/>
         </tabpanel>
-        <tabpanel width="100%" zclass="stc-z-tabpanel" >
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Usuario"  zclass="stc-z-toolbarbutton"
+        <tabpanel width="100%" style="background: #515151; padding-top: 0px">
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Creación cliente"  width="100%" style="background: #515151;"/>
+        </tabpanel>
+        <tabpanel width="100%" style="background: #515151;">
+                <toolbarbutton iconSclass="z-icon-caret-right" label=" Usuario"  width="100%" style="background: #515151;"
                                onClick="@command('chanceInternalPage', service='admin-user')"/>
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Roles"  width="100%" zclass="stc-z-toolbarbutton"/>
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Perfiles"  width="100%" zclass="stc-z-toolbarbutton"/>
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Servicios"  width="100%" zclass="stc-z-toolbarbutton"
-                               onClick="@command('chanceInternalPage', service='adm-service')"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label=" Roles"  width="100%" style="background: #515151;"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label=" Perfiles"  width="100%" style="background: #515151;"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label=" Servicios"  width="100%" style="background: #515151;"/>
         </tabpanel>
     </tabpanels>
 </tabbox>

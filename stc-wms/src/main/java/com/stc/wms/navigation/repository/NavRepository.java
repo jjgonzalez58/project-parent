@@ -25,21 +25,18 @@ public class NavRepository {
         panelList.add(menuT);
         PanelService menuHome = new PanelService("home", "~./home.zul");
         panelList.add(menuHome);
-        PanelService menuTable = new PanelService("adm-material", "~./warehouse/material-manager.zul");
+        PanelService menuTable = new PanelService("Tables", "z-icon-flag-o");
         panelList.add(menuTable);
         // kevin borge
         PanelService menuP = new PanelService("create-provider", "~./provider/create-provider.zul");
         panelList.add(menuP);
         PanelService tableProviders = new PanelService("load-table", "~./provider/table-providers.zul" );
         panelList.add(tableProviders);
-        PanelService  purchaseOrder = new PanelService("purchase-order", "~./provider/purchase-order.zul" );
-        panelList.add(purchaseOrder);
 
-
-        PanelService menuC = new PanelService("adm-service", "~./profile/manager-service.zul");
+        PanelService menuC = new PanelService("Contact", "z-icon-envelope-o");
 //        menuC.setCounter(Util.nextInt(1, 10));
         panelList.add(menuC);
-        PanelService menuF = new PanelService("adm-profile", "~./profile/manager-profile.zul");
+        PanelService menuF = new PanelService("Freeze", "z-icon-snowflake-o");
         panelList.add(menuF);
         PanelService menuL = new PanelService("Logout", "z-icon-power-off");
         panelList.add(menuL);
