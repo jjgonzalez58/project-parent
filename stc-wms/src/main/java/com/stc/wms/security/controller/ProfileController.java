@@ -16,12 +16,14 @@ import java.util.List;
  *
  * @author job
  */
-@FeignClient(name = "security-prifile", url="localhost:8083")
+@FeignClient(name = "securityProfile", url="localhost:8083")
 public interface ProfileController {
 
     @PostMapping("/security/profile/save")
     ResponseEntity<ProfileDTO> saveProfile(@RequestBody ProfileDTO profolie);
 
     @GetMapping("/security/profile/all")
-    ResponseEntity<List<ProfileDTO>> loadAll();
+    ResponseEntity<List<ProfileDTO>> loadAllProfile();
+
+
 }
