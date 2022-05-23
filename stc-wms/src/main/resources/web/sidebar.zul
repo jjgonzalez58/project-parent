@@ -24,8 +24,10 @@
                 <toolbarbutton iconSclass="z-icon-caret-right" label="Caja"   width="100%" style="background: #515151;"/>
         </tabpanel>
         <tabpanel width="100%" style="background: #515151; padding-top: 0px">
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Orden Compra"  width="100%" style="background: #515151;"/>
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Recepción Matrial"  width="100%" style="background: #515151;"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Orden Compra"  width="100%" style="background: #515151;"
+                               onClick="@command('chanceInternalPage', service='purchase-order')"/>
+
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Recepción Material"  width="100%" style="background: #515151;"/>
         </tabpanel>
         <tabpanel width="100%" style="background: #515151; padding-top: 0px">
                 <toolbarbutton iconSclass="z-icon-caret-right" label="Creación cliente"  width="100%" style="background: #515151;"/>

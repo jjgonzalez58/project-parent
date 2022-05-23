@@ -2,15 +2,17 @@ package com.stc.wms.managerprovider.service;
 
 import com.stc.wms.managerprovider.controller.ProviderController;
 import com.stc.wms.managerprovider.dto.ProviderDTO;
+import com.stc.wms.usermanager.dto.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.security.Provider;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service
+@Service("findProvider")
 public class FindProviderService {
-    private ProviderController providerController;
+    private final ProviderController providerController;
 
 
     @Autowired
@@ -19,8 +21,6 @@ public class FindProviderService {
     }
 
     public List<ProviderDTO> providerList(){
-        return providerController.providers().stream()
-                .map(providerDTO->(ProviderDTO) providerDTO)
-                .collect(Collectors.toList());
+        return providerController.providers();
     }
 }

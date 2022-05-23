@@ -10,7 +10,6 @@ import javax.swing.*;
 public class RenderTProvider implements ListitemRenderer {
     @Override
     public void render(Listitem providers, Object provider, int i) throws Exception {
-        Listcell id = new Listcell(((ProviderDTO)  provider).getIdProveedor().toString());
         Listcell nit = new Listcell(((ProviderDTO) provider).getNit());
         Listcell nombre = new Listcell(((ProviderDTO) provider).getNombre());
         Listcell direccion = new Listcell(((ProviderDTO) provider).getDireccion());
@@ -19,7 +18,7 @@ public class RenderTProvider implements ListitemRenderer {
         Listcell email = new Listcell(((ProviderDTO) provider).getEmail());
         Listcell status= new Listcell(((ProviderDTO) provider).getStatus());
 
-        providers.appendChild(id);
+
         providers.appendChild(nit);
         providers.appendChild(nombre);
         providers.appendChild(direccion);

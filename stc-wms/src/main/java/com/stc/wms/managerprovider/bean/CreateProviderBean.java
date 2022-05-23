@@ -14,10 +14,8 @@ import org.zkoss.zk.ui.select.annotation.WireVariable;
 @Slf4j
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class CreateProviderBean {
-
     private ProviderDTO providerDTO;
     private String errorMessage;
-
     @WireVariable("provider")
     private CreateProviderService service;
     @Init

@@ -21,7 +21,6 @@ public class CreateProviderService {
         this.controller = controller;
     }
     public boolean SaveProvider(ProviderDTO providerDTO){
-        log.info("provider {}", providerDTO);
         ResponseEntity<Object> response = controller.createProvider(providerDTO);
         return (boolean) response.getBody();
     }

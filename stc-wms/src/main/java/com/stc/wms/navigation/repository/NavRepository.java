@@ -32,6 +32,9 @@ public class NavRepository {
         panelList.add(menuP);
         PanelService tableProviders = new PanelService("load-table", "~./provider/table-providers.zul" );
         panelList.add(tableProviders);
+        PanelService  purchaseOrder = new PanelService("purchase-order", "~./provider/purchase-order.zul" );
+        panelList.add(purchaseOrder);
+
 
         PanelService menuC = new PanelService("Contact", "z-icon-envelope-o");
 //        menuC.setCounter(Util.nextInt(1, 10));
