@@ -37,8 +37,8 @@ public class ManagerProfileBean extends GeneralTransactionBean {
     @Init
     public void init(){
         this.createProfile = new ProfileDTO();
-        this.listProfile = new ArrayList<>();
         setEditMode(false);
+        loadProfileList();
     }
 
     @Command
@@ -52,5 +52,9 @@ public class ManagerProfileBean extends GeneralTransactionBean {
     public void newProfile(){}
     @Command
     public void deleteProfile(){}
+
+    public void loadProfileList(){
+        this.listProfile = profileService.loadAllProfile();
+    }
 
 }

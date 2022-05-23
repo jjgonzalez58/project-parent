@@ -36,7 +36,7 @@ public class NavRepository {
         PanelService menuC = new PanelService("adm-service", "~./profile/manager-service.zul");
 //        menuC.setCounter(Util.nextInt(1, 10));
         panelList.add(menuC);
-        PanelService menuF = new PanelService("Freeze", "z-icon-snowflake-o");
+        PanelService menuF = new PanelService("adm-profile", "~./profile/manager-profile.zul");
         panelList.add(menuF);
         PanelService menuL = new PanelService("Logout", "z-icon-power-off");
         panelList.add(menuL);

@@ -35,7 +35,8 @@
                 <toolbarbutton iconSclass="z-icon-caret-right" label="Usuario"  zclass="stc-z-toolbarbutton"
                                onClick="@command('chanceInternalPage', service='admin-user')"/>
                 <toolbarbutton iconSclass="z-icon-caret-right" label="Roles"  width="100%" zclass="stc-z-toolbarbutton"/>
-                <toolbarbutton iconSclass="z-icon-caret-right" label="Perfiles"  width="100%" zclass="stc-z-toolbarbutton"/>
+                <toolbarbutton iconSclass="z-icon-caret-right" label="Perfiles"  width="100%" zclass="stc-z-toolbarbutton"
+                               onClick="@command('chanceInternalPage', service='adm-profile')"/>
                 <toolbarbutton iconSclass="z-icon-caret-right" label="Servicios"  width="100%" zclass="stc-z-toolbarbutton"
                                onClick="@command('chanceInternalPage', service='adm-service')"/>
         </tabpanel>
