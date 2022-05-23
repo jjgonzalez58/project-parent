@@ -1,7 +1,7 @@
 <zk>
     <div width="100%" style="">
         <label value="Administración de Perfiles de usuario" zclass="stc-title-one"/>
-        <div viewModel="@id('vm') @init('com.stc.wms.security.bean.ManagerProfileBean)" apply="org.zkoss.bind.BindComposer" >
+        <div viewModel="@id('vm') @init('com.stc.wms.security.bean.ManagerProfileBean')" apply="org.zkoss.bind.BindComposer" >
             <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;">
                 <caption label="Datos Genarales del Perfil"/>
                 <tabbox>
