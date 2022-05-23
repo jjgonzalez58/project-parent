@@ -44,7 +44,7 @@ public class ManagerProfileService {
 
     public List<ProfileDTO> loadAllProfile(){
         try{
-            ResponseEntity<List<ProfileDTO>> load = this.profileController.loadAll();
+            ResponseEntity<List<ProfileDTO>> load = this.profileController.loadAllProfile();
             return load.getBody();
         }catch (RetryableException ex){
             log.error("Error consumiendo servicio ",ex);
