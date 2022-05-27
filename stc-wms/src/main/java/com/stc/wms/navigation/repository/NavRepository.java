@@ -40,6 +40,8 @@ public class NavRepository {
         panelList.add(menuF);
         PanelService menuL = new PanelService("Logout", "z-icon-power-off");
         panelList.add(menuL);
+        PanelService menuIcon = new PanelService("icons", "~./icons.zul");
+        panelList.add(menuIcon);
 
     }
 

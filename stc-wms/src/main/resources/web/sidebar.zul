@@ -30,6 +30,8 @@
         </tabpanel>
         <tabpanel width="100%" zclass="stc-z-tabpanel">
                 <toolbarbutton iconSclass="z-icon-caret-right" label="Creación cliente"  width="100%" zclass="stc-z-toolbarbutton"/>
+            <toolbarbutton iconSclass="z-icon-caret-right" label="iconos"  width="100%" zclass="stc-z-toolbarbutton"
+                           onClick="@command('chanceInternalPage', service='icons')"/>
         </tabpanel>
         <tabpanel width="100%" zclass="stc-z-tabpanel" >
                 <toolbarbutton iconSclass="z-icon-caret-right" label="Usuario"  zclass="stc-z-toolbarbutton"

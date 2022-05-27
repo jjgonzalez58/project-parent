@@ -27,8 +27,6 @@ public class AuthorizationService {
     public boolean validateAuthorizationService(){
         if (this.code == null || this.code.isEmpty())
             return false;
-        if (this.description == null || this.description.isEmpty())
-            return false;
-        return true;
+        return this.description != null && !this.description.isEmpty();
     }
 }
