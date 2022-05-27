@@ -19,5 +19,5 @@ public class ProfileDTO {
     private int perfilId;
     private String name;
     private String description;
-    private List<AuthorizationService> serviceList;
+    private List<ServiceDTO> serviceList;
 }

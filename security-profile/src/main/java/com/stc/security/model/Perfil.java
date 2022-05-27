@@ -28,4 +28,10 @@ public class Perfil {
             joinColumns = @JoinColumn(name = "perfil_id"),
             inverseJoinColumns = @JoinColumn(name = "servicio_id"))
     private List<AuthorizationService> serviceList;
+
+    public boolean validateData(){
+        if (this.name == null || this.name.isEmpty())
+            return false;
+        return this.description != null && !this.description.isEmpty();
+    }
 }

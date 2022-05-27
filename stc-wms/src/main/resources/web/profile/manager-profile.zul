@@ -16,31 +16,59 @@
                                     <rows>
                                         <row>
                                             <label value="Nombre:"/>
-                                            <textbox id="txtNombreMaterial"  focus="true"/>
+                                            <textbox value="@bind(vm.createProfile.name)" id="txtNombreMaterial"  focus="true"/>
                                         </row>
                                         <row>
                                             <label value="Descripción:"/>
-                                            <textbox id="descrip" />
+                                            <textbox value="@bind(vm.createProfile.description)" id="descrip" />
                                         </row>
                                     </rows>
                                 </grid>
                             </div>
                         </tabpanel>
                         <tabpanel>
-                            <div>
-                                <grid style="border: none;">
-                                    <rows>
-                                        <row>
-                                            <label value="Categoria:"/>
-                                            <combobox id="idCat"  focus="true"/>
-                                        </row>
-                                        <row>
-                                            <label value="Nombre Categoria:"/>
-                                            <textbox id="nomcat" />
-                                        </row>
-                                    </rows>
-                                </grid>
-                            </div>
+                            <hbox >
+                            <listbox mold="paging" autopaging="false" model="@load(vm.listServices)"
+                                     selectedItem="@bind(vm.selectLeftService)" emptyMessage="0 Coincicencias" >
+                                <listhead>
+                                    <listheader label="Identificador" />
+                                    <listheader label="Nombre" />
+                                    <listheader label="Descripcion" />
+                                </listhead>
+                                <template name="model" var="svrall">
+                                    <listitem>
+                                        <listcell label="@load(svrall.id)"/>
+                                        <listcell label="@load(svrall.code)"/>
+                                        <listcell label="@load(svrall.description)"/>
+                                    </listitem>
+                                </template>
+                            </listbox>
+                                <vbox>
+                                    <toolbarbutton iconSclass="z-icon-fast-forward" style="color: #3a92c8;"
+                                                   onClick="@command('asignedAll')"/>
+                                    <toolbarbutton iconSclass="z-icon-step-forward"  style="color: #3a92c8;"
+                                                   onClick="@command('asignedService')"/>
+                                    <toolbarbutton iconSclass="z-icon-step-backward"  style="color: #3a92c8;"
+                                                   onClick="@command('deleteService')"/>
+                                    <toolbarbutton iconSclass="z-icon-fast-backward"  style="color: #3a92c8;"
+                                                   onClick="@command('deleteAll')"/>
+                                </vbox>
+                                <listbox mold="paging" autopaging="false" model="@load(vm.tmpListService)"
+                                         selectedItem="@bind(vm.selectRigthService)" emptyMessage="0 Coincicencias" >
+                                    <listhead>
+                                        <listheader label="Identificador" />
+                                        <listheader label="Nombre" />
+                                        <listheader label="Descripcion"/>
+                                    </listhead>
+                                    <template name="model" var="svrasg">
+                                        <listitem>
+                                            <listcell label="@load(svrasg.id)"/>
+                                            <listcell label="@load(svrasg.code)"/>
+                                            <listcell label="@load(svrasg.description)"/>
+                                        </listitem>
+                                    </template>
+                                </listbox>
+                            </hbox>
                         </tabpanel>
                     </tabpanels>
                 </tabbox>
@@ -64,7 +92,7 @@
                     </listhead>
                     <template name="model" var="prf">
                         <listitem>
-                            <listcell label="@load(prf.id)"/>
+                            <listcell label="@load(prf.perfilId)"/>
                             <listcell label="@load(prf.name)"/>
                             <listcell label="@load(prf.description)"/>
                             <listcell>

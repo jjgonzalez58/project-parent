@@ -31,7 +31,7 @@
                 <listheader label="Codigo"/>
                 <listheader label="Descripcion"/>
                 <listheader label="CtrlEdit" width="100px"/>
-                <listheader label="CtrlDelete" width="100px"/>
+                <listheader label="CtrlDelete" width="150px"/>
             </listhead>
             <template name="model" var="svr">
                 <listitem>
