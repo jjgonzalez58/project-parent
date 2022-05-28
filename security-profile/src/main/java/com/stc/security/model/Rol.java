@@ -3,6 +3,7 @@ package com.stc.security.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * User: job
@@ -20,4 +21,11 @@ public class Rol {
     private int idrol;
     private String nombre;
     private String descripcion;
+
+    public boolean validateData(){
+        boolean validate = this.nombre != null && !this.nombre.isEmpty();
+        if (this.descripcion == null || this.descripcion.isEmpty())
+            validate = false;
+        return validate;
+    }
 }
