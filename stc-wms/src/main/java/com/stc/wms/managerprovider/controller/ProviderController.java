@@ -6,10 +6,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@FeignClient(name = "tpv-service-provider", url="localhost:9090")
+@FeignClient(name = "warehouse-service", url="localhost:8086")
 public interface ProviderController {
 
     @GetMapping("providers/list")

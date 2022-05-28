@@ -40,4 +40,18 @@
             </rows>
         </grid>
     </window>
+    <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vmt') @init('com.stc.wms.managerprovider.bean.ViewTableProviderBean')">
+        <listbox id="tableProviders" model="@load(vmt.model)" itemRenderer="@load(vmt.render)">
+            <listhead>
+                <listheader label = "Id"/>
+                <listheader label = "Nombre"/>
+                <listheader label = "Nit"/>
+                <listheader label = "Direccion"/>
+                <listheader label = "Telefono"/>
+                <listheader label = "Contacto"/>
+                <listheader label = "Email"/>
+                <listheader label= "status"/>
+            </listhead>
+        </listbox>
+    </window>
 </zk>

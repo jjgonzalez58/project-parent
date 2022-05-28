@@ -20,7 +20,7 @@ public class ViewTableProviderBean {
     private List<ProviderDTO> providers;
     private String errorMessage;
      private Listbox tableProviders;
-    @WireVariable
+    @WireVariable("findProviders")
     private FindProviderService findProviderService;
 
     @Init
@@ -31,14 +31,9 @@ public class ViewTableProviderBean {
     @NotifyChange({"tableProviders" ,"errorMessage"})
     public void loadTable(){
         this.providers = findProviderService.providerList();
-
         if(this.providers==null || this.providers.isEmpty()){
             setErrorMessage("No se cargaron los proveedores");
             log.error("No hay proveedores registrados");
-        }else{
-            ListModel model = new ListModelList<ProviderDTO>(providers);
-            tableProviders.setModel(model);
-            tableProviders.setItemRenderer(new RenderTProvider());
         }
     }
     public void onSelect$tableProviders(){
