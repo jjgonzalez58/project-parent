@@ -1,0 +1,60 @@
+<div>
+    <label value="Sistema pos stc" zclass="stc-title-one"/>
+    <div style="width: 100%; display: inline-flex;">
+        <div style="width: 80%;">
+            <groupbox>
+                <caption label="Informacion de producto"/>
+                <label value="Codigo"/>
+                <textbox value=""/>
+            </groupbox>
+            <groupbox>
+                <caption label="Items en esta venta"/>
+                <listbox zclass="stc-z-listbox">
+                    <listhead >
+                        <listheader label="Codigo"/>
+                        <listheader label="Descripcion"/>
+                        <listheader label="cantidad"/>
+                        <listheader label="precio unitario"/>
+                        <listheader label="sub total"/>
+                    </listhead>
+                    <listitem>
+                        <listcell label="01"/>
+                        <listcell label="Azucar"/>
+                        <listcell label="2"/>
+                        <listcell label="4.50"/>
+                        <listcell label="9"/>
+                    </listitem>
+                    <listitem>
+                        <listcell label="02"/>
+                        <listcell label="Sal"/>
+                        <listcell label="2"/>
+                        <listcell label="3.50"/>
+                        <listcell label="7"/>
+                    </listitem>
+                </listbox>
+            </groupbox>
+        </div>
+        <groupbox style="width:42%;">
+            <caption label="Resumen de venta"/>
+            <grid style="border: none;">
+                <rows>
+                    <row style="border: none;">
+            <label value="Cliente:"/><label value="Nombre cliente"/>
+                    </row>
+                    <row style="border: none;">
+                        <label value="Total Items:"/><textbox value="10" disabled="true" style="width:35%;"/>
+                    </row>
+                    <row>
+            <label value="Sub Total"/><textbox value="125.00" disabled="true" style="width:35%;"/>
+                    </row>
+                    <row>
+            <label value="Descuentos"/><textbox value="0.00" disabled="true" style="width:35%;"/>
+                    </row>
+                    <row>
+            <label value="Total a Pagar"/><textbox value="125.00" disabled="true" style="width:35%;"/>
+                    </row>
+                </rows>
+            </grid>
+        </groupbox>
+    </div>
+</div>
