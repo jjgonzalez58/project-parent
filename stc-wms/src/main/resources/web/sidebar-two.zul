@@ -1,0 +1,7 @@
+<div style="background: #6c757d; margin-left: -7px; width:7%; height: 100%;" viewModel="@id('vm') @init('com.stc.wms.navigation.bean.NavbarBean')">
+    <vbox>
+        <toolbarbutton style="color: white; margin-left: 4px;"
+                       iconSclass="z-icon-align-justify	"
+                       onClick="@command('chanceSidebar', sidebar='sidebar', option='')"/>
+    </vbox>
+</div>

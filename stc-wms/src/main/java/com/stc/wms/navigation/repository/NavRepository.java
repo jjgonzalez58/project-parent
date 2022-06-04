@@ -42,6 +42,10 @@ public class NavRepository {
         panelList.add(menuL);
         PanelService menuIcon = new PanelService("icons", "~./icons.zul");
         panelList.add(menuIcon);
+        PanelService menuPos = new PanelService("stc-pos", "~./sales/stc-pos.zul");
+        panelList.add(menuPos);
+        PanelService menuSidebarTwo = new PanelService("side-bar-two", "~./sidebar-two.zul");
+        panelList.add(menuSidebarTwo);
 
     }
 

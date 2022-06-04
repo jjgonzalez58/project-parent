@@ -33,6 +33,9 @@ public class NavbarBean {
     @Init
     public void init(@ScopeParam(NAVIGATION)NavigationModel navModel){
         navigationModel = navModel;
+        initialComponent();
+    }
+    private void initialComponent(){
         panelList = NavRepository.queryMenu();
         currentPage = homePanel();
     }
@@ -48,12 +51,19 @@ public class NavbarBean {
         navigationModel.setContentUrl(targetPath);
         BindUtils.postNotifyChange(null, null, navigationModel, "contentUrl");
         currentPage.setEnable(false);
+        chanceSidebar("sidebarTwo","");
     }
     @Command
     @NotifyChange("currentPage")
     public void selectedPanel(@BindingParam("panel") String panel){
         currentPage = findPanel(panel);
         currentPage.setEnable(true);
+    }
+    @Command
+    public void chanceSidebar(@BindingParam("sidebar")String sidebar, @BindingParam("option")String option){
+        log.info("select "+sidebar+" "+option);
+        navigationModel.setSidebar(getSidebarPanel(sidebar));
+        notifyComponentSidebar();
     }
 
     private String findMenu(String service){
@@ -69,6 +79,15 @@ public class NavbarBean {
                 return panel;
         }
         return homePanel();
+    }
+
+    private String getSidebarPanel(String sidebar){
+        if ("sidebar".equals(sidebar))
+            return NavigationModel.SIDEBAR_PAGE;
+        else return NavigationModel.SIDEBAR_PAGE_TWO;
+    }
+    private void notifyComponentSidebar(){
+        BindUtils.postNotifyChange(null, null, navigationModel, "sidebar");
     }
     private PanelService homePanel(){
         return new PanelService("home", "~./home.zul");
