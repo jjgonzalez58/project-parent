@@ -12,3 +12,14 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://localhost:8081/eureka/
+
+logging:
+  level:
+    com:
+      stc: INFO
+    springFramework:
+      web:
+        client:
+          RestTemplate: INFO
+  file:
+    name: logs/discovery.log
