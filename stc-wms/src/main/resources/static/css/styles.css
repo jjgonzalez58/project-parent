@@ -19,7 +19,7 @@
 }
 .stc-z-tabpanel{
  border-top: 1px solid #D9D9D9;
- padding: 16px;
+ padding: 14px;
  zoom: 0;
  color: rgba(0,0,0,0.9);
 }
@@ -29,7 +29,7 @@
  width: 100%;
  max-height: 170px;
  display: block;
- padding: 16px;
+ padding: 0px;
  zoom: 1;
  border-top: 1px solid #D9D9D9;
  color: rgba(0,0,0,0.9);
@@ -55,7 +55,7 @@
 }
 .stc-z-toolbarbutton-content{
  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
- font-size: 18px;
+ font-size: 14px;
  font-weight: normal;
  font-style: normal;
  color: #e9ecef;
@@ -119,4 +119,38 @@
  font-size: 15px;
  font-family: serif;
  color: brown;
+}
+.z-listbox {
+ background: #FFFFFF;
+ border: 1px solid #D9D9D9;
+ overflow: hidden;
+ zoom: 1;
+}
+.z-listbox-header {
+ width: 100%;
+ background: #0093F9;
+ position: relative;
+ overflow: hidden;
+ height: 32px;
+ text-align: center;
+ align-items: unset;
+ align-content: stretch;
+}
+.z-listheader {
+ border-left: 1px solid #0064ED;
+ border-bottom: 1px solid #0064ED;
+ padding: 0;
+ background: #137197;
+ position: relative;
+ overflow: hidden;
+ white-space: nowrap;
+}
+.z-listheader-content {
+ color: #FFFFFF;
+ position: relative;
+ text-align: center;
+ align-items: center;
+ align-content: normal;
+ padding-bottom: 2px;
+ font-weight: bold;
 }
