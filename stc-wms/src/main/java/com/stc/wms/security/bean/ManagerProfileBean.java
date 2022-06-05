@@ -5,18 +5,19 @@ import com.stc.wms.security.dto.ServiceDTO;
 import com.stc.wms.security.service.ManagerAuthorizationService;
 import com.stc.wms.security.service.ManagerProfileService;
 import com.stc.wms.shared.bean.GeneralTransactionBean;
+import com.stc.wms.shared.bean.SharedExecution;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.zkoss.bind.annotation.Command;
-import org.zkoss.bind.annotation.Init;
-import org.zkoss.bind.annotation.NotifyChange;
+import org.zkoss.bind.annotation.*;
+import org.zkoss.zk.ui.Desktop;
+import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.select.annotation.VariableResolver;
 import org.zkoss.zk.ui.select.annotation.WireVariable;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 
 /**
  * User: job
@@ -30,6 +31,7 @@ import java.util.List;
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class ManagerProfileBean extends GeneralTransactionBean {
 
+    private Desktop desktop;
     private ProfileDTO createProfile;
     private ProfileDTO currentProfile;
     private List<ProfileDTO> listProfile;
@@ -38,6 +40,7 @@ public class ManagerProfileBean extends GeneralTransactionBean {
     private ServiceDTO selectLeftService;
     private ServiceDTO selectRigthService;
     private boolean editMode;
+    private boolean embbedeMode;
 
 
     @WireVariable("profileManager")
@@ -46,15 +49,31 @@ public class ManagerProfileBean extends GeneralTransactionBean {
     private ManagerAuthorizationService services;
 
     @Init
-    public void init(){
-        this.createProfile = new ProfileDTO();
-        setEditMode(false);
-        loadProfileList();
+    public void init(@ContextParam(ContextType.DESKTOP)Desktop desktop){
+        this.desktop = desktop;
+        Map arg = Executions.getCurrent().getArg();
         this.listServices = services.loadAllService();
+        if ( arg != null && !arg.isEmpty()){
+            log.info("trae parametros***");
+            this.createProfile = (ProfileDTO) arg.get(SharedExecution.WINDOWENBEDED.getValue());
+            if (this.createProfile !=null) {
+                this.tmpListService = createProfile.getServiceList();
+                sortList(this.tmpListService);
+                filterProfileList();
+                sortList(this.listServices);
+                setEditMode(true);
+                setEmbbedeMode(true);
+            }
+        }else {
+            this.createProfile = new ProfileDTO();
+            setEditMode(false);
+            setEmbbedeMode(false);
+            loadProfileList();
+        }
     }
 
     @Command
-    @NotifyChange({"listProfile","createProfile"})
+    @NotifyChange({"listProfile","createProfile","listProfile"})
     public void saved(){
         if (this.createProfile == null){
             showErrorMessageBox("Debe ingresar informacion general del perfil");
@@ -73,12 +92,14 @@ public class ManagerProfileBean extends GeneralTransactionBean {
         }
         ProfileDTO prfSave = this.profileService.savedProfile(this.createProfile);
         if (prfSave.getErrorCode() == 0){
-            showSuccessMessageBox(prfSave.getErrorMessage());
+            log.info("Objeto guardado correctamente "+prfSave.getErrorMessage());
+            super.showSuccessMessageBox(prfSave.getErrorMessage());
         }else {
-            showErrorMessageBox(prfSave.getErrorMessage());
+            super.showErrorMessageBox(prfSave.getErrorMessage());
         }
         this.createProfile = new ProfileDTO();
         this.listServices = services.loadAllService();
+        loadProfileList();
     }
     @Command
     public void editProfile(){}
@@ -87,6 +108,8 @@ public class ManagerProfileBean extends GeneralTransactionBean {
     public void newProfile(){}
     @Command
     public void deleteProfile(){}
+    @Command
+    public void search(){}
 
     @Command
     @NotifyChange({"listServices","tmpListService"})
@@ -138,6 +161,13 @@ public class ManagerProfileBean extends GeneralTransactionBean {
             this.listServices.addAll(this.tmpListService);
             this.tmpListService.clear();
             sortList(this.listServices);
+    }
+    private void filterProfileList(){
+        if (this.tmpListService !=null && !this.tmpListService.isEmpty()){
+            this.tmpListService.forEach(prf ->{
+                this.listServices.remove(prf);
+            });
+        }
     }
     public void loadProfileList(){
         this.listProfile = profileService.loadAllProfile();
