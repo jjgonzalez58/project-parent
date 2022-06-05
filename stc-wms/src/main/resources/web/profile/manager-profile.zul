@@ -1,7 +1,13 @@
-<zk>
-    <div width="100%" style="">
+<!--<zk>-->
+    <div style="width:100%; text-align: center;" viewModel="@id('vm') @init('com.stc.wms.security.bean.ManagerProfileBean')" apply="org.zkoss.bind.BindComposer">
         <label value="Administración de Perfiles de usuario" zclass="stc-title-one"/>
-        <div viewModel="@id('vm') @init('com.stc.wms.security.bean.ManagerProfileBean')" apply="org.zkoss.bind.BindComposer" >
+        <toolbar zclass="stc-z-toolbar">
+            <toolbarbutton id="btntoolSearch" iconSclass="z-icon-search" label="Buscar" onClick="@command('search')"  style="width: 180px;"/>
+            <toolbarbutton id="btntoolGuardar" iconSclass="z-icon-save" label="Guardar" onClick="@command('saved')" visible="@load(!vm.editMode)" style="width: 180px;"/>
+            <toolbarbutton id="btntoolEditar" iconSclass="z-icon-save" label="Guardar cambios" onClick="@command('saved')"  visible="@load(vm.editMode)" style="width: 180px;"/>
+            <toolbarbutton id="btntoolCancelar" iconSclass="z-icon-rotate-left" label="Cancelar" onClick="@command('newProfile')"  style="width: 180px;"/>
+        </toolbar>
+        <div>
             <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;">
                 <caption label="Datos Genarales del Perfil"/>
                 <tabbox>
@@ -73,13 +79,13 @@
                     </tabpanels>
                 </tabbox>
 
-                <div style="align-content: center; padding-button: 10px;">
-                    <button id="btnGuardar" label="Guardar" onClick="@command('saved')" visible="@load(!vm.editMode)" style="width: 180px;"/>
-                    <button id="btnEditar" label="Guardar cambios" onClick="@command('saved')" visible="@load(vm.editMode)" style="width: 180px;"/>
-                    <button id="btnCancelar" label="Cancelar" onClick="@command('newProfile')" visible="@load(vm.editMode)" style="width: 180px;"/>
-                </div>
+<!--                <div style="align-content: center; padding-button: 10px;">-->
+<!--                    <button id="btnGuardar" label="Guardar" onClick="@command('saved')" visible="@load(!vm.editMode)" style="width: 180px;"/>-->
+<!--                    <button id="btnEditar" label="Guardar cambios" onClick="@command('saved')" visible="@load(vm.editMode)" style="width: 180px;"/>-->
+<!--                    <button id="btnCancelar" label="Cancelar" onClick="@command('newProfile')" visible="@load(vm.editMode)" style="width: 180px;"/>-->
+<!--                </div>-->
             </groupbox>
-            <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;">
+            <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;" visible="@load(!vm.embbedeMode)">
                 <caption label="Servicio en sistema"/>
                 <listbox mold="paging" autopaging="false" model="@load(vm.listProfile)"
                          selectedItem="@bind(vm.currentProfile)" emptyMessage="0 Coincicencias">
@@ -87,8 +93,8 @@
                         <listheader label="Identificador"/>
                         <listheader label="Nombre"/>
                         <listheader label="Descripcion"/>
-                        <listheader label=""/>
-                        <listheader label=""/>
+                        <listheader label="CtrlEdit"/>
+                        <listheader label="CtrlDelete"/>
                     </listhead>
                     <template name="model" var="prf">
                         <listitem>
@@ -107,4 +113,4 @@
             </groupbox>
         </div>
     </div>
-</zk>
+<!--</zk>-->
