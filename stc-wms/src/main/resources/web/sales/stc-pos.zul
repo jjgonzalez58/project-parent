@@ -4,8 +4,24 @@
         <div style="width: 80%;">
             <groupbox>
                 <caption label="Informacion de producto"/>
-                <label value="Codigo"/>
-                <textbox value=""/>
+                <div style="display: grid;">
+                        <div style="display: inline-flex; align-items: center;">
+                            <label value="Codigo:" />
+                            <textbox value="" />
+                            <button iconSclass="z-icon-spinner" style="margin:2px;"/>
+                            <label value="Cantidad:" />
+                            <textbox value="" />
+                            <button label="Agregar" style="margin:2px;"/>
+                        </div>
+                        <div style="display: inline-flex; align-items: center;">
+                            <label value="Nombre: " />
+                            <textbox value="" />
+                            <label value="Precio venta: " />
+                             <textbox value="" />
+                            <label value="Existencia: " />
+                            <textbox value="" />
+                        </div>
+                </div>
             </groupbox>
             <groupbox>
                 <caption label="Items en esta venta"/>
@@ -42,16 +58,16 @@
             <label value="Cliente:"/><label value="Nombre cliente"/>
                     </row>
                     <row style="border: none;">
-                        <label value="Total Items:"/><textbox value="10" disabled="true" style="width:35%;"/>
+                        <label value="Total Items:"/><textbox value="10" disabled="true" style="width:45%;"/>
                     </row>
                     <row>
-            <label value="Sub Total"/><textbox value="125.00" disabled="true" style="width:35%;"/>
+            <label value="Sub Total"/><textbox value="125.00" disabled="true" style="width:45%;"/>
                     </row>
                     <row>
-            <label value="Descuentos"/><textbox value="0.00" disabled="true" style="width:35%;"/>
+            <label value="Descuentos"/><textbox value="0.00" disabled="true" style="width:45%;"/>
                     </row>
                     <row>
-            <label value="Total a Pagar"/><textbox value="125.00" disabled="true" style="width:35%;"/>
+            <label value="Total a Pagar" style="font-weight: bold; color: #137197; "/><textbox value="125.00" disabled="true" style="font-size: 24px; font-weight: bold; width: 82%; color: #137197;"/>
                     </row>
                 </rows>
             </grid>
