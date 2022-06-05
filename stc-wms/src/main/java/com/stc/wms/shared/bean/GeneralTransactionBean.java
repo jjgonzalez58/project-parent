@@ -2,9 +2,15 @@ package com.stc.wms.shared.bean;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.event.EventListener;
+import org.zkoss.zul.Div;
 import org.zkoss.zul.Messagebox;
+import org.zkoss.zul.Window;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -41,4 +47,21 @@ public class GeneralTransactionBean implements GeneralTransaction {
 
     @Override
     public void doAccepConfirm() {}
+
+    public boolean isEmpty(String field){
+        return field == null || field.trim().isEmpty();
+    }
+
+    public void showWindow(String panel,String title,Object obj){
+        Map arg = new HashMap();
+        arg.put(SharedExecution.WINDOWENBEDED.getValue(),obj);
+        Window windowComponent = (Window) Executions.createComponents("~./hightlighted/window-empty.zul",null,arg);
+        Div  divComponent = (Div) Executions.createComponents(panel,windowComponent,arg);
+        windowComponent.setId("vnt"+System.currentTimeMillis());
+        windowComponent.setTitle(title);
+        windowComponent.setClosable(true);
+        windowComponent.setWidth("75%");
+        windowComponent.doHighlighted();
+        windowComponent.setPosition("center");
+    }
 }
