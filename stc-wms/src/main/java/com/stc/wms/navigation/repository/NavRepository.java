@@ -21,7 +21,7 @@ public class NavRepository {
     }
 
     static public void initMenus(){
-        PanelService menuT = new PanelService("admin-user", "~./user/create-user.zul");
+        PanelService menuT = new PanelService("admin-user", "~./profile/manager-user.zul");
         panelList.add(menuT);
         PanelService menuHome = new PanelService("home", "~./home.zul");
         panelList.add(menuHome);

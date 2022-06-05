@@ -27,7 +27,7 @@ public class User {
     private String lastname;
     private String alias;
     private String password;
-    private int rolid;
+    private int rol_idrol;
     @ManyToMany
     @JoinTable(name = "asigna_perfil",
             joinColumns = @JoinColumn(name = "usuario_id"),

@@ -1,0 +1,180 @@
+<!--<zk>-->
+    <div style="width:100%; text-align: center;" viewModel="@id('vm') @init('com.stc.wms.security.bean.ManagerUserBean')" apply="org.zkoss.bind.BindComposer">
+        <label value="Administración de Usuarios" zclass="stc-title-one"/>
+        <toolbar zclass="stc-z-toolbar">
+            <toolbarbutton id="btntoolSearch" iconSclass="z-icon-search" label="Buscar" onClick="@command('saved')"  style="width: 180px;"/>
+            <toolbarbutton id="btntoolGuardar" iconSclass="z-icon-save" label="Guardar" onClick="@command('saved')" visible="@load(!vm.editMode)" style="width: 180px;"/>
+            <toolbarbutton id="btntoolEditar" iconSclass="z-icon-save" label="Guardar cambios" onClick="@command('saved')" visible="@load(vm.editMode)" style="width: 180px;"/>
+            <toolbarbutton id="btntoolCancelar" iconSclass="z-icon-rotate-left" label="Cancelar" onClick="@command('newUser')"  style="width: 180px;"/>
+        </toolbar>
+        <div  >
+            <groupbox closable="false" style="padding-left: 10%; padding-right: 10%; padding-top: 3px;" >
+<!--                <caption label="Datos Genarales de Usuario"/>-->
+                <div>
+                    <grid style="border: none;">
+                        <rows>
+                            <row>
+                                <label value="Nombre:"/>
+                                <textbox value="@bind(vm.createUser.name)" id="txtNameUser"  focus="true"/>
+                                <label value="Apellido:"/>
+                                <textbox value="@bind(vm.createUser.lastName)" id="txtLastName" />
+                            </row>
+                            <row>
+                                <label value="Alias:"/>
+                                <textbox value="@bind(vm.createUser.alias)" id="txtAlias" />
+                                <label value="Password:"/>
+                                <textbox type="password" value="@bind(vm.createUser.password)" id="txtPass" />
+                            </row>
+                        </rows>
+                    </grid>
+                </div>
+                <tabbox>
+                    <tabs>
+                        <tab label="Rol" closable="false"/>
+                        <tab label="Perfiles" closable="false"/>
+                    </tabs>
+                    <tabpanels>
+                        <tabpanel>
+                            <div>
+                                <grid style="border: none;">
+                                    <rows>
+                                        <row>
+                                            <label value="Rol"/>
+                                            <bandbox id="bdRol" mold="rounded" autodrop="true"
+                                                     value="@load(vm.currentRolSelect.nombre)"
+                                                     placeholder="Seleccione un rol" width="200px" readonly="true">
+                                                <bandpopup>
+                                                    <listbox height="250px" width="200px" mold="paging"
+                                                             autopaging="false" model="@load(vm.listRols)"
+                                                             onSelect="bdRol.close()"
+                                                             selectedItem="@bind(vm.currentRolSelect)"
+                                                             emptyMessage="0 Coincidnecias">
+                                                        <listhead>
+                                                            <listheader label="Id"/>
+                                                            <listheader label="Nombre"/>
+                                                        </listhead>
+                                                        <template name="model" var="rl">
+                                                            <listitem onClick="@command('rolAssignUser')">
+                                                                <listcell label="@load(rl.idrol)"/>
+                                                                <listcell label="@load(rl.nombre)"/>
+                                                            </listitem>
+                                                        </template>
+                                                    </listbox>
+                                                </bandpopup>
+                                            </bandbox>
+                                        </row>
+                                        <row>
+                                            <label value="Código Rol:"/>
+                                            <textbox value="@bind(vm.currentRolSelect.idrol)" id="txtIdrol"  disabled="true"/>
+                                            <label value="Nombre:"/>
+                                            <textbox value="@bind(vm.currentRolSelect.nombre)" id="txtNomrol" disabled="true"/>
+                                        </row>
+                                        <row>
+                                            <label value="Descripción:"/>
+                                            <textbox value="@bind(vm.currentRolSelect.descripcion)" id="txtrolDesc" disabled="true"/>
+                                        </row>
+                                    </rows>
+                                </grid>
+                            </div>
+                        </tabpanel>
+                        <tabpanel>
+                            <hbox >
+                                <listbox mold="paging" autopaging="false" model="@load(vm.profileList)"
+                                         selectedItem="@bind(vm.selectLeftProfile)" emptyMessage="0 Coincicencias" >
+                                    <listhead>
+                                        <listheader label="Identificador" />
+                                        <listheader label="Nombre" />
+                                        <listheader label="Descripcion" />
+                                        <listheader label="CtrlEdit"/>
+                                    </listhead>
+                                    <template name="model" var="prf">
+                                        <listitem>
+                                            <listcell label="@load(prf.perfilId)"/>
+                                            <listcell label="@load(prf.name)"/>
+                                            <listcell label="@load(prf.description)"/>
+                                            <listcell>
+                                                <toolbarbutton iconSclass="z-icon-edit" label="Editar" onClick="@command('editProfile',selected = prf)"/>
+                                            </listcell>
+                                        </listitem>
+                                    </template>
+                                </listbox>
+                                <vbox>
+                                    <toolbarbutton iconSclass="z-icon-fast-forward" style="color: #3a92c8;"
+                                                   onClick="@command('asignedAll')"/>
+                                    <toolbarbutton iconSclass="z-icon-step-forward"  style="color: #3a92c8;"
+                                                   onClick="@command('asignedProfile')"/>
+                                    <toolbarbutton iconSclass="z-icon-step-backward"  style="color: #3a92c8;"
+                                                   onClick="@command('deleteProfile')"/>
+                                    <toolbarbutton iconSclass="z-icon-fast-backward"  style="color: #3a92c8;"
+                                                   onClick="@command('deleteAll')"/>
+                                </vbox>
+                                <listbox mold="paging" autopaging="false" model="@load(vm.selectListProfiles)"
+                                         selectedItem="@bind(vm.selectRigthProfile)" emptyMessage="0 Coincicencias" >
+                                    <listhead>
+                                        <listheader label="Identificador" />
+                                        <listheader label="Nombre" />
+                                        <listheader label="Descripcion"/>
+                                    </listhead>
+                                    <template name="model" var="prf">
+                                        <listitem>
+                                            <listcell label="@load(prf.perfilId)"/>
+                                            <listcell label="@load(prf.name)"/>
+                                            <listcell label="@load(prf.description)"/>
+                                        </listitem>
+                                    </template>
+                                </listbox>
+                            </hbox>
+                            <label value="Lista de Autorizaciones por perfil" style="color: #38AFDF; font-size: 16px; font-weight: bold;"/>
+                            <listbox mold="paging" autopaging="false" model="@load(vm.selectLeftProfile.serviceList)" emptyMessage="0 Coincicencias">
+                                <listhead>
+                                    <listheader label="Identificador" width="150px"/>
+                                    <listheader label="Codigo de Autorización"/>
+                                    <listheader label="Descripcion de Autorización"/>
+                                </listhead>
+                                <template name="model" var="svr">
+                                    <listitem>
+                                        <listcell label="@load(svr.id)"/>
+                                        <listcell label="@load(svr.code)"/>
+                                        <listcell label="@load(svr.description)"/>
+                                    </listitem>
+                                </template>
+                            </listbox>
+                        </tabpanel>
+                    </tabpanels>
+                </tabbox>
+
+<!--                <div style="align-content: center; padding-button: 10px; padding-top: 5px;">-->
+<!--                    <button id="btnGuardar" label="Guardar" onClick="@command('saved')" visible="@load(!vm.editMode)" style="width: 180px;"/>-->
+<!--                    <button id="btnEditar" label="Guardar cambios" onClick="@command('saved')" visible="@load(vm.editMode)" style="width: 180px;"/>-->
+<!--                    <button id="btnCancelar" label="Cancelar" onClick="@command('newUser')" visible="@load(vm.editMode)" style="width: 180px;"/>-->
+<!--                </div>-->
+            </groupbox>
+<!--            <groupbox closable="false" style="padding-left: 10%; padding-right: 10%;">-->
+<!--                <caption label="Servicio en sistema"/>-->
+<!--                <listbox mold="paging" autopaging="false" model="@load(vm.listProfile)"-->
+<!--                         selectedItem="@bind(vm.currentProfile)" emptyMessage="0 Coincicencias">-->
+<!--                    <listhead>-->
+<!--                        <listheader label="Identificador"/>-->
+<!--                        <listheader label="Nombre"/>-->
+<!--                        <listheader label="Descripcion"/>-->
+<!--                        <listheader label="CtrlEdit"/>-->
+<!--                        <listheader label="CtrlDelete"/>-->
+<!--                    </listhead>-->
+<!--                    <template name="model" var="prf">-->
+<!--                        <listitem>-->
+<!--                            <listcell label="@load(prf.perfilId)"/>-->
+<!--                            <listcell label="@load(prf.name)"/>-->
+<!--                            <listcell label="@load(prf.description)"/>-->
+<!--                            <listcell>-->
+<!--                                <button  label="Editar" onClick="@command('editProfile',selected = prf)" />-->
+<!--                            </listcell>-->
+<!--                            <listcell>-->
+<!--                                <button  label="Eliminar" onClick="@command('deleteProfile',selected = prf)" />-->
+<!--                            </listcell>-->
+<!--                        </listitem>-->
+<!--                    </template>-->
+<!--                </listbox>-->
+<!--            </groupbox>-->
+        </div>
+    </div>
+<!--</zk>-->
