@@ -40,7 +40,7 @@ public class ManagerProfile {
             dto.setErrorMessage("Registro guardado correctamente");
         }else {
             dto.setErrorCode(1);
-            dto.setDescription("Error guardando registro");
+            dto.setErrorMessage("Error guardando registro");
         }
         return dto;
     }
