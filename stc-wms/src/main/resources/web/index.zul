@@ -8,8 +8,8 @@
             <div zclass="stc-sidebar-include" style="min-width: 69px; max-width: 15%;     margin-left: -21px;">
                 <include src="@load(vm.navigationModel.sidebar)" style="height:50%; min-width: 8%;"/>
             </div>
-            <div id="dvContent" sclass="container-fluid" hflex="1" style="width: 100%; text-align: center; align-content: center;">
-                <include src="@load(vm.navigationModel.contentUrl)" style="width: 100%; text-align: center; align-content: center;"/>
+            <div id="dvContent" sclass="container-fluid" hflex="1" style="width: 100%; text-align: center; align-content: center; padding-right: 0px !important; padding-left: 0px !important;">
+                <include src="@load(vm.navigationModel.contentUrl)" style="width: 100%; text-align: center; align-content: center; padding-right: 0px !important; padding-left: 0px !important;"/>
             </div>
         </div>
     </div>
