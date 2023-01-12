@@ -1,0 +1,99 @@
+<zk>
+    <label value="Titulo grup" style="    font-weight: bold;
+    font-family: initial;
+    color: #26517a;
+    font-size: 25px;"/>
+    <div style="
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  grid-gap: 42px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+margin-left: 15px;
+    border: 2px #26517a solid;
+border-radius: 8px;"  >
+
+    <div zclass="stc-card" onClick="@command('chanceInternalPage', service='manager')"  style="border-left: 10px red solid;">
+        <image src="img/avatarUser.jpg" style="width: 60px; height: 54px; border-radius: 50%; margin-left: 12px;    margin-top: 25px;
+    margin-right: 10px;" onClick="@command('chanceInternalPage', service='manager')"/>
+        <div style="display: grid; text-align: left;">
+            <label value="Usuarios" style="font-weight: bold; font-size: 25px; padding-top: 15px; height: 0px; color: #26517a;"/>
+            <label value="Administrar datos generales de Usuario" style="font-size: 14px; color: #26517a;     margin-top: -22px;
+    border-top: solid;"/>
+        </div>
+    </div>
+        <div zclass="stc-card" onClick="@command('chanceInternalPage', service='manager')"  style="border-left: 10px blue solid;">
+            <image src="img/avatarUser.jpg" style="width: 60px; height: 54px; border-radius: 50%; margin-left: 12px;    margin-top: 25px;
+    margin-right: 10px;" onClick="@command('chanceInternalPage', service='manager')"/>
+            <div style="display: grid; text-align: left;">
+                <label value="Usuarios" style="font-weight: bold; font-size: 25px; padding-top: 15px; height: 0px; color: #26517a;"/>
+                <label value="Administrar datos generales de Usuario" style="font-size: 14px; color: #26517a;     margin-top: -22px;
+    border-top: solid;"/>
+            </div>
+        </div>
+        <div zclass="stc-card" onClick="@command('chanceInternalPage', service='manager')"  style="border-left: 10px yellow solid;">
+            <image src="img/avatarUser.jpg" style="width: 60px; height: 54px; border-radius: 50%; margin-left: 12px;    margin-top: 25px;
+    margin-right: 10px;" onClick="@command('chanceInternalPage', service='manager')"/>
+            <div style="display: grid; text-align: left;">
+                <label value="Usuarios" style="font-weight: bold; font-size: 25px; padding-top: 15px; height: 0px; color: #26517a;"/>
+                <label value="Administrar datos generales de Usuario" style="font-size: 14px; color: #26517a;     margin-top: -22px;
+    border-top: solid;"/>
+            </div>
+        </div>
+        <div zclass="stc-card" onClick="@command('chanceInternalPage', service='manager')"  style="border-left: 10px grey solid;">
+            <image src="img/avatarUser.jpg" style="width: 60px; height: 54px; border-radius: 50%; margin-left: 12px;    margin-top: 25px;
+    margin-right: 10px;" onClick="@command('chanceInternalPage', service='manager')"/>
+            <div style="display: grid; text-align: left;">
+                <label value="Usuarios" style="font-weight: bold; font-size: 25px; padding-top: 15px; height: 0px; color: #26517a;"/>
+                <label value="Administrar datos generales de Usuario" style="font-size: 14px; color: #26517a;     margin-top: -22px;
+    border-top: solid;"/>
+            </div>
+        </div>
+        <div zclass="stc-card" onClick="@command('chanceInternalPage', service='manager')"  style="border-left: 10px red solid;">
+            <image src="img/avatarUser.jpg" style="width: 60px; height: 54px; border-radius: 50%; margin-left: 12px;    margin-top: 25px;
+    margin-right: 10px;" onClick="@command('chanceInternalPage', service='manager')"/>
+            <div style="display: grid; text-align: left;">
+                <label value="Usuarios" style="font-weight: bold; font-size: 25px; padding-top: 15px; height: 0px; color: #26517a;"/>
+                <label value="Administrar datos generales de Usuario" style="font-size: 14px; color: #26517a;     margin-top: -22px;
+    border-top: solid;"/>
+            </div>
+        </div>
+    </div>
+    <label value="Titulo grup" style="    font-weight: bold;
+    font-family: initial;
+    color: #26517a;
+    font-size: 25px;"/>
+    <div style="
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  grid-gap: 42px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+margin-left: 15px;
+    border: 2px #26517a solid;
+border-radius: 8px;"  >
+        <div zclass="stc-card" onClick="" >
+            <toolbarbutton iconSclass="z-icon-film" style="margin-top: 5px;"  width="25%" onClick="@command('chanceInternalPage', service='manager')" />
+            <div style="display: grid; text-align: left;">
+                <label value="Usuarios" style="font-weight: bold; font-size: 25px; padding-top: 15px; height: 0px"/>
+                <label value="Gestion de usuarios de sistema" style="font-size: 14px;"/>
+            </div>
+        </div>
+        <div zclass="stc-card">
+            <toolbarbutton iconSclass="z-icon-film" style="margin-top: 5px;"  width="25%" onClick="@command('chanceInternalPage', service='manager')" />
+            <div style="display: grid; text-align: left;">
+                <label value="Perfiles" style="font-weight: bold; font-size: 25px; padding-top: 15px; height: 0px"/>
+                <label value="Gestion de Perfiles de sistema" style="font-size: 14px;"/>
+            </div>
+        </div>
+        <div zclass="stc-card">
+            <toolbarbutton iconSclass="z-icon-film" style="margin-top: 5px;"  width="25%" onClick="@command('chanceInternalPage', service='manager')" />
+            <div style="display: grid; text-align: left;">
+                <label value="Perfiles" style="font-weight: bold; font-size: 25px; padding-top: 15px; height: 0px"/>
+                <label value="Gestion de Perfiles de sistema" style="font-size: 14px;"/>
+            </div>
+        </div>
+    </div>
+</zk>

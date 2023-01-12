@@ -1,5 +1,6 @@
 package com.stc.wms.security.bean;
 
+import com.stc.wms.navigation.bean.NavbarBean;
 import com.stc.wms.security.dto.ProfileDTO;
 import com.stc.wms.security.dto.ServiceDTO;
 import com.stc.wms.security.service.ManagerAuthorizationService;
@@ -8,6 +9,7 @@ import com.stc.wms.shared.bean.GeneralTransactionBean;
 import com.stc.wms.shared.bean.SharedExecution;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.zkoss.bind.BindUtils;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.zk.ui.Desktop;
 import org.zkoss.zk.ui.Executions;
@@ -47,10 +49,14 @@ public class ManagerProfileBean extends GeneralTransactionBean {
     private ManagerProfileService profileService;
     @WireVariable("authorizationService")
     private ManagerAuthorizationService services;
+    @WireVariable("navBarBean")
+    private NavbarBean navbarBean;
 
     @Init
     public void init(@ContextParam(ContextType.DESKTOP)Desktop desktop){
         this.desktop = desktop;
+        boolean validSe = getWebUtils().validateSession(this.desktop.getSession());
+        log.info("Validar session "+validSe);
         Map arg = Executions.getCurrent().getArg();
         this.listServices = services.loadAllService();
         if ( arg != null && !arg.isEmpty()){

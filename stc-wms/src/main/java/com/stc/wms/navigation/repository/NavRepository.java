@@ -46,6 +46,8 @@ public class NavRepository {
         panelList.add(menuPos);
         PanelService menuSidebarTwo = new PanelService("side-bar-two", "~./sidebar-two.zul");
         panelList.add(menuSidebarTwo);
+        PanelService menuManager = new PanelService("manager", "~./manager.zul");
+        panelList.add(menuManager);
 
     }
 

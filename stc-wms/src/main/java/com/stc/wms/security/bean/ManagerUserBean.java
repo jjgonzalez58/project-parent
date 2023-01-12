@@ -52,7 +52,8 @@ public class ManagerUserBean extends GeneralTransactionBean {
     public void init(){
         this.createUser = new UserDTO();
         loadProfile();
-        sortListProfile(this.profileList);
+        if (this.profileList != null && !this.profileList.isEmpty())
+            sortListProfile(this.profileList);
         setEditMode(false);
         loadRols();
     }

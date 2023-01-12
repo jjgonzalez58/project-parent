@@ -1,12 +1,11 @@
-package com.stc.wms.loginuser.model;
+package com.stc.security.dto;
 
-import com.stc.wms.security.dto.UserDTO;
 import lombok.Data;
 
 /**
  * User: job
- * Date: 7/05/22
- * Time: 21:40
+ * Date: 4/06/22
+ * Time: 22:46
  *
  * @author job
  */

@@ -18,6 +18,7 @@ import java.util.List;
 public class Perfil {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "perfilid")
     private int perfilId;
     @Column(name = "nombre")
     private String name;
@@ -25,8 +26,8 @@ public class Perfil {
     private String description;
     @ManyToMany
     @JoinTable(name = "Autorizacion",
-            joinColumns = @JoinColumn(name = "perfil_id"),
-            inverseJoinColumns = @JoinColumn(name = "servicio_id"))
+            joinColumns = @JoinColumn(name = "perfilid"),
+            inverseJoinColumns = @JoinColumn(name = "idservicio"))
     private List<AuthorizationService> serviceList;
 
     public boolean validateData(){

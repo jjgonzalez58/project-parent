@@ -1,10 +1,9 @@
 <zk xmlns:n="native">
-    <vbox style="width: 100%; align-content: center;">
-        <label value="Sistema de Gestión de Productos y Facturación" style="
-    font-size: 25px;
-    font-weight: bold;
-    color: #38AFDF;
-    margin-top: 2px;"/>
-        <image src="img/logoStc.png" style="width: 500px; height: 500px;"/>
-    </vbox>
+    <div style="width: 100%; align-content: center; height: 100%;">
+<!--        <label value="Sistema de Gestión de Productos y Facturación" style="-->
+<!--    font-size: 25px;-->
+<!--    font-weight: bold;-->
+<!--    color: #38AFDF;"/>-->
+        <image src="img/logoStc.png" style="width: 700px; height: 700px;"/>
+    </div>
 </zk>

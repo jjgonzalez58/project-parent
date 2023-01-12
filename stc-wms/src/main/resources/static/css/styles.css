@@ -1,3 +1,6 @@
+body{
+ background-color: rgba(0, 0, 0, .1) !important;
+}
 .stc-z-tab-text{
  font-style: normal;
  color: #f8f9fa !important;
@@ -15,7 +18,7 @@
  color: #f8f9fa !important;
 }
 .stc-z-tab-text-text{
- color: #f8f9fa !important;
+ color: #26517a !important;
 }
 .stc-z-tabpanel{
  border-top: 1px solid #D9D9D9;
@@ -24,7 +27,7 @@
  color: rgba(0,0,0,0.9);
 }
 .stc-z-tabpanel-content{
- background: #6c757d;
+ background: #f8f9fa !important;
  border: none;
  width: 100%;
  max-height: 170px;
@@ -33,6 +36,7 @@
  zoom: 1;
  border-top: 1px solid #D9D9D9;
  color: rgba(0,0,0,0.9);
+ /*color: #26517a !important;*/
 }
 .stc-z-tab-text-text:hover{
  cursor: pointer;
@@ -46,7 +50,7 @@
  -moz-border-radius: 4px;
  border-radius: 4px;
  overflow: hidden;
- background: #6c757d;
+ background: #f8f9fa !important;
  width: 100%;
 }
 .stc-z-toolbarbutton:hover{
@@ -55,10 +59,11 @@
 }
 .stc-z-toolbarbutton-content{
  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
- font-size: 14px;
+ font-size: 35px;
  font-weight: normal;
  font-style: normal;
- color: #e9ecef;
+ /*color: black;*/
+ color: #26517a !important;
  border: 2px solid transparent;
  padding: 6px 12px;
  line-height: 18px;
@@ -66,7 +71,7 @@
  vertical-align: middle;
  position: relative;
  white-space: nowrap;
- background: #6c757d;
+ background: #f8f9fa !important;
 }
 .stc-z-toolbarbutton-content:hover{
  cursor: pointer;
@@ -75,10 +80,39 @@
 .stc-sidebar-include{
  max-width: 280px;
  min-width: 260px;
- background: #6c757d;
+ background: #f8f9fa !important;
  margin-left: -7px;
  padding-left: 20px;
+ box-shadow: 0px 0px 10px grey;
+ height: 103.5%;
 
+}
+.stc-sidebar-buton{
+ display: inline-grid;
+ margin-top: 5px;
+ text-align: center;
+ cursor: pointer;
+}
+.stc-sidebar-buton:hover{
+ /*background-color: rgba(0, 0, 0, .2) !important;*/
+ /*color: rgba(0, 0, 0, .2) !important;*/
+ box-shadow: 0px 0px 10px #26517a ;
+}
+.stc-card{
+ background: #f8f9fa !important;
+ box-shadow: 0px 0px 10px grey;
+ border-radius: 5px;
+ cursor: pointer;
+ display: flex;
+ max-height: 125px;
+ max-width: 375px;
+ min-height: 125px;
+ min-width: 360px;
+ margin: 7px;
+}
+.stc-card:hover{
+ box-shadow: 0px 0px 10px #26517a ;
+ /*background-color: rgba(0, 0, 0, .2) !important;*/
 }
 
 
@@ -167,4 +201,21 @@
  position: relative;
  width: 100%;
  height: 34px;
+}
+
+.z-loading {
+ top: 50rem !important;
+ left: 75rem !important;
+ z-index: 31000;
+}
+.nav-footer{
+ background: #26517a !important;
+ margin-top: 28px;
+ text-align: center;
+ color: white;
+ font-size: 8px;
+ font-family: serif;
+ margin-left: -6px;
+ margin-right: -5px;
+ height: 35px;
 }

@@ -1,10 +1,13 @@
 package com.stc.wms.shared.bean;
 
+import com.stc.wms.security.admin.SecurityWebUtils;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.event.EventListener;
+import org.zkoss.zk.ui.select.annotation.VariableResolver;
+import org.zkoss.zk.ui.select.annotation.WireVariable;
 import org.zkoss.zul.Div;
 import org.zkoss.zul.Messagebox;
 import org.zkoss.zul.Window;
@@ -22,7 +25,12 @@ import java.util.Map;
  */
 @Data
 @Slf4j
+@VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class GeneralTransactionBean implements GeneralTransaction {
+
+    @WireVariable("securityWebUtils")
+    private SecurityWebUtils webUtils;
+
     public  GeneralTransactionBean(){
     }
     public void showConfirmMessageBox(String message, GeneralTransaction transaction) {

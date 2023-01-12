@@ -1,16 +1,28 @@
-<?link rel="stylesheet" href="webjars/bootstrap/4.6.0/css/bootstrap.min.css"?>
+<!--<?link rel="stylesheet" href="webjars/bootstrap/4.6.0/css/bootstrap.min.css"?>-->
+<!--<?link href="css/bootstrap.css" rel="stylesheet" type="text/css"?>-->
 <zk>
     <style src="css/styles.css"/>
-    <div viewModel="@id('vm')@init('com.stc.wms.navigation.bean.MainBean')" width="100%" height="94%"
-             style="margin-top: 0px; width: 100%; height:100%;">
-        <include src="~./navbar.zul" style="width: 100%;  border:1px; margin-top: -2px"/>
-        <div style="width: 100%; height:100%; border:1px; display: inline-flex; margin-top: 0px">
-            <div zclass="stc-sidebar-include" style="min-width: 69px; max-width: 15%;     margin-left: -21px;">
+    <style src="css/bootstrap.css"/>
+    <style src="css/bootstrap-theme.min.css"/>
+    <style src="css/index.css.dsp"/>
+
+    <div viewModel="@id('vm')@init('com.stc.wms.navigation.bean.MainBean')" width="100%" height="89%"
+             style="margin-top: 0px; width: 100%; height:100%; ">
+        <include src="~./navbar-two.zul" style="width: 100%;  border:1px; margin-top: -2px"/>
+        <div style="width: 100%; height:99%; border:1px; display: inline-flex; margin-top: 0px; margin-top: -19px;">
+            <div zclass="stc-sidebar-include" style="min-width: 70px; max-width: 95px; margin-left: -21px;" visible="@load(vm.navigationModel.visibleSidebar)">
                 <include src="@load(vm.navigationModel.sidebar)" style="height:50%; min-width: 8%;"/>
             </div>
-            <div id="dvContent" sclass="container-fluid" hflex="1" style="width: 100%; text-align: center; align-content: center; padding-right: 0px !important; padding-left: 0px !important;">
-                <include src="@load(vm.navigationModel.contentUrl)" style="width: 100%; text-align: center; align-content: center; padding-right: 0px !important; padding-left: 0px !important;"/>
+            <div id="dvContent" sclass="container-fluid" hflex="1" style="width: 98% !important; text-align: center; align-content: center; padding-right: 0px !important; padding-left: 0px !important; overflow: auto;">
+                <include src="@load(vm.navigationModel.contentUrl)" style="width: 98% !important; text-align: center; align-content: center; padding-right: 0px !important; padding-left: 0px !important;"/>
             </div>
         </div>
+        <include src="~./footer.zul" style="width: 100%;  border:1px; margin-top: 3px"/>
     </div>
+<!--    <script src="js/excanvas.min.js" if="${zk.ie lt 9}"/>-->
+    <script src="js/jquery.easy-pie-chart.min.js"/>
+    <script src="js/bootstrap.min.js"/>
+    <script src="js/jquery.flot.min.js"/>
+    <script src="js/jquery.flot.pie.js"/>
+    <script src="js/jquery.sparkline.min.js"/>
 </zk>

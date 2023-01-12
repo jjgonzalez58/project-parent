@@ -47,13 +47,20 @@ public class ManagerRolService {
     }
 
     public List<RolDto> loadAllRole(){
-        List<Rol> rols = this.repository.findAll();
+        List<Rol> rols = null;
         List<RolDto> rolDtos = new ArrayList<>();
+        try {
+             rols = this.repository.findAll();
+        } catch (Exception e){
+            log.error("Error consultando roles ",e);
+        }
+        if (rols == null || rols.isEmpty()){
+            return  rolDtos;
+        }
+
         rols.forEach(role ->{
             rolDtos.add((RolDto) this.mapperService.parseDtoFromService(role,new RolDto()));
         });
         return rolDtos;
     }
-
-
 }

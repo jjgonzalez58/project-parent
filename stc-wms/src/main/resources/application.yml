@@ -7,11 +7,11 @@ spring:
   boot:
     admin:
       client:
-        url: [ http://stc.service.discovery:8081/admin-service ]
+        url: [ http://stc.service.discovery:9001/admin-service ]
 eureka:
   client:
     service-url:
-      defaultZone: http://stc.service.discovery:8081/eureka/
+      defaultZone: http://stc.service.discovery:9001/eureka/
 management:
   endpoints:
     web:

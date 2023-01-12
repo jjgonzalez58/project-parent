@@ -1,0 +1,19 @@
+<zk>
+    <window id = "dvLogin"
+            style="padding-top: 1rem; width: 40rem; background-color: rgba(0, 0, 0, .2) !important; margin-top: 0rem; height: 40rem; border-radius: 7px;"
+         viewModel="@id('vm') @init('com.stc.wms.loginuser.bean.SecurityLoginBean')" apply="org.zkoss.bind.BindComposer">
+        <vbox align="center" width="90%">
+            <label value="Usuario"/>
+            <div style="border: 1px; border-color: #137197; border-radius: 4px; display: inline-flex;">
+                <toolbarbutton iconSclass="z-icon-user" zclass="stc-z-toolbarbutton" disabled="true" style="width: 50px; height: 50px; padding: inherit; border-radius: 4px 0 0 4px; background-color: #2980B9; margin-top: -10px;"/>
+                <textbox id = "txtUser" style="width: 20rem; height: 3rem;" value="@bind(vm.loginRequest.loginUser)"/>
+            </div>
+            <label value="Contraseña"/>
+            <div style="border: 1px; border-color: #137197; border-radius: 4px; display: inline-flex;">
+                <toolbarbutton iconSclass="z-icon-key" zclass="stc-z-toolbarbutton" disabled="true" style="width: 50px; height: 50px; padding: inherit; border-radius: 4px 0 0 4px; background-color: #2980B9; margin-top: -10px;"/>
+                <textbox id = "txtPass" type="password" style="width: 20rem; height: 3rem;" value="@bind(vm.loginRequest.loginPass)"/>
+            </div>
+            <button id = "btnLogin" label="Ingresar"  style="width: 100%; background-color: #21618C;" onClick="@command('login')"/>
+        </vbox>
+    </window>
+</zk>

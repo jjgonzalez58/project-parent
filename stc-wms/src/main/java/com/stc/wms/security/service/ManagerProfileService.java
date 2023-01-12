@@ -2,8 +2,10 @@ package com.stc.wms.security.service;
 
 import com.stc.wms.security.controller.ProfileController;
 import com.stc.wms.security.dto.ProfileDTO;
+import feign.FeignException;
 import feign.RetryableException;
 import lombok.extern.slf4j.Slf4j;
+import org.bouncycastle.asn1.cmp.PKIFailureInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -38,6 +40,15 @@ public class ManagerProfileService {
             ProfileDTO errorReturned = new ProfileDTO();
             errorReturned.setErrorCode(1);
             errorReturned.setErrorMessage("Error almacenando la informacion");
+            return errorReturned;
+        }catch (FeignException e){
+            log.error("Error obteniendo datos",e);
+            ProfileDTO errorReturned = new ProfileDTO();
+            errorReturned.setErrorCode(e.status());
+            if (e.status() == 500)
+                errorReturned.setErrorMessage("Error interno en cliente");
+            else
+                errorReturned.setErrorMessage("Error almacenando la informacion");
             return errorReturned;
         }
     }

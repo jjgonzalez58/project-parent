@@ -1,6 +1,5 @@
 package com.stc.security.dto;
 
-import com.stc.security.model.AuthorizationService;
 import lombok.Data;
 
 import java.util.List;
